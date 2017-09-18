@@ -1,5 +1,5 @@
 # Reading List
-All papers included related project with source code. These paper adopted theory and technology based on Compiler-related and other(such as data mining, machine learning,etc.) Technology.
+All papers included related projects with source code. These excellent papers adopted theory and technology based on Compiler-related and other(such as data mining, machine learning,etc.) Technology.
 
 ### Staitc Analysis to Find Bugs/Rules
  - [Improving integer security for systems with Kint](http://pdos.csail.mit.edu/papers/kint:osdi12.pdf),OSDI 2012
@@ -9,10 +9,11 @@ All papers included related project with source code. These paper adopted theory
 
  - [APISan: Sanitizing API Usages through Semantic Cross-checking](https://sslab.gtisc.gatech.edu/assets/papers/2016/yun:apisan.pdf) USENIX SECURITY 2016
  
+### Language improvement for security/safety
+ - [Secure Virtual Architecture: A Safe Execution Environment for Commodity Operating Systems](http://llvm.org/pubs/2007-SOSP-SVA.pdf)， SOSP 2007
 ### Verification for system correctness
  - [Push-Button Verification of File Systems via Crash Refinement.](http://locore.cs.washington.edu/papers/sigurbjarnarson-yggdrasil.pdf),OSDI 2016
  - [Hyperkernel: Push-Button Verification of an OS Kernel](https://www.sigops.org/sosp/sosp17/program.html), SOSP 2017
-
 
 ## requirement
 1. 阅读论文，理解设计思路，写出阅读报告，并能够给老师做汇报
