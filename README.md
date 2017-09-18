@@ -41,3 +41,5 @@
 - The Theory of Parsing, Translation, and Compiling，John E. Hopcroft, Jefferey D. Ullman,    Volume 1 & Volume 2 Prentice-Hall Series in Automatic Computation，1972
 - 国内的编译原理教材
 
+## ReadingList
+希望看看编译技术如何用在科研方面的同学可看看[相关论文和对应的project](https://github.com/chyyuu/compiler_course_info/blob/master/readinglist.md)
