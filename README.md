@@ -43,3 +43,5 @@
 
 ## ReadingList
 希望看看编译技术如何用在科研方面的同学可看看[相关论文和对应的project](https://github.com/chyyuu/compiler_course_info/blob/master/readinglist.md)
+
+## [其他相关资源](https://github.com/chyyuu/compiler_course_info/blob/master/resources.md)
