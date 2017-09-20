@@ -2,7 +2,6 @@
 # Contents
 
 * [Books](#books)
-
   - [General Overview](#general-overview)
   - [Introductory](#introductory)
   - [Advanced](#advanced)
