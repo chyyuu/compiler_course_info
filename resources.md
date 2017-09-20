@@ -17,7 +17,8 @@
 ## LEX/YACC
 - [Python Lex-Yacc](http://www.dabeaz.com/ply/)
 - [ANTLR (ANother Tool for Language Recognition)--a powerful parser generator](http://www.antlr.org/)
-
+- [JFlex is a lexical analyzer generator written in Java](http://jflex.de/)
+- [byaccj is a parser generator written in Java](byaccj.sourceforge.net)
 
 ## C language
 - [c4 - C in four functions](https://github.com/rswier/c4)
