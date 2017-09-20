@@ -1,5 +1,5 @@
+-----------------------------------------
 # Contents
-
   * [Books](#books)
     + [General Overview](#general-overview)
     + [Introductory](#introductory)
@@ -12,7 +12,7 @@
     + [Lex&Yacc](#lexyacc)
     + [Educational and Toy Projects](#educational-and-toy-projects)
     + [Automata](#automata)
-
+-----------------------------------------
 # Books
 
 ## General Overview
