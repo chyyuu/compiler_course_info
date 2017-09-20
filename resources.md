@@ -110,7 +110,7 @@
 
 # Courses
 ## Courses about Formal Languages and Automata Theory
-- [CS162 in University of California, Irvine](http://www.ics.uci.edu/~goodrich/teach/cs162/)
+- [Formal Languages and Automata Theory -- CS162 in University of California, Irvine](http://www.ics.uci.edu/~goodrich/teach/cs162/) - Formal aspects of describing and recognizing languages by grammars and automata. Parsing regular and context-free languages. 
 
 ## Courses about Compiler Principle
   * [Compilers Construction, Cambridge](http://www.cl.cam.ac.uk/teaching/1516/CompConstr/materials.html) - Introduction to compiler construction course from the University of Cambridge.
