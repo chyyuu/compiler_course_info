@@ -29,7 +29,6 @@
     4. 在deadline前，按序完成compiler_lab实验
     5. 复习，做课后练习，if (碰到问题)　到微信/网络学堂上提问;
     6. 在考试周参加期末考试;
-    7. 
     }
 
 ```
@@ -41,7 +40,7 @@
 - The Theory of Parsing, Translation, and Compiling，John E. Hopcroft, Jefferey D. Ullman,    Volume 1 & Volume 2 Prentice-Hall Series in Automatic Computation，1972
 - 国内的编译原理教材
 
-## ReadingList
+## ReadingList 编译原理课拓展实验
 希望看看编译技术如何用在科研方面的同学可看看[相关论文和对应的project](https://github.com/chyyuu/compiler_course_info/blob/master/readinglist.md)
 
 ## [其他相关资源](https://github.com/chyyuu/compiler_course_info/blob/master/resources.md)
