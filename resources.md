@@ -2,9 +2,9 @@
 # Contents
 
 * [Books](#books)
-  * [General Overview](#general-overview)
-  * [Introductory](#introductory)
-  * [Advanced](#advanced)
+  + [General Overview](#general-overview)
+  + [Introductory](#introductory)
+  + [Advanced](#advanced)
 * [Papers](#papers)
 * [Courses](#courses)
 * [Tutorials](#tutorials)
