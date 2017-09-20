@@ -6,9 +6,13 @@
 
 # Compiler Related Tools
 
-## Powerful Compilers
+## Powerful Languages & Compilers
 - [GCC, the GNU Compiler Collection](http://gcc.gnu.org/)
 - [The LLVM Compiler Infrastructure](http://llvm.org/)
+- [Rust a systems programming language wants to replace C/C++](https://www.rust-lang.org/en-US/)
+- [Python is a programming language that lets you work quickly](https://www.python.org/)
+- [OpenJDK is the open-source implementation of the Java](http://openjdk.java.net/)
+- [kotlin - a language which is 100% interoperable with Java Android](https://kotlinlang.org/)
 
 ## LEX/YACC
 - [Python Lex-Yacc](http://www.dabeaz.com/ply/)
