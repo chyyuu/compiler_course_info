@@ -1,4 +1,4 @@
-# Reading List
+# Reading List ( 编译原理课拓展实验)
 All papers included related projects with source code. These excellent papers adopted theory and technology based on Compiler-related and other(such as data mining, machine learning,etc.) Technology.
 
 ### Staitc Analysis to Find Bugs/Rules
@@ -21,3 +21,5 @@ All papers included related projects with source code. These excellent papers ad
 3. 针对新的目标(比如另外一个有bug的软件子系统/软件等)，使用论文中的project，发现新（论文中没有提到的）的bug/rule/result，写出分析报告，并能够给老师做汇报
 4. 分析理解论文中的project中代码的具体实现，能够升级到新版本（比如以前project是基于llvm-3.6，现在升级到llmv-5.0等），写出project详细分析报告，并能够给老师做汇报
 5. 分析理解论文中的project中代码的具体实现，能够改进project（比如提升性能，增加功能，修复bug等），写出改进报告，并能够给老师做汇报
+
+想进一步了解某篇论文或选定一篇论文作为拓展实验的目标后，请与王老师和陈老师联系。
