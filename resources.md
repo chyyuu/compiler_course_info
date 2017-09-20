@@ -22,6 +22,6 @@
 
 ## C language
 - [c4 - C in four functions](https://github.com/rswier/c4)
-- [8cc C Compiler supporting all C11 language features](https://github.com/rui314/8cc)
+- [8cc - C Compiler supporting all C11 language features](https://github.com/rui314/8cc)
 
 ## Automata
