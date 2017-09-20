@@ -204,3 +204,6 @@
   * [tisp](https://github.com/raviqqe/tisp) - "Time is Space" Programming Language Interpreter.
 
 ## Automata
+
+## Reference
+- [aalhour's awesome-compilers](https://github.com/aalhour/awesome-compilers)
