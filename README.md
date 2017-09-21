@@ -23,9 +23,8 @@
     3. 上课听讲，提问/被提问
     4. 在deadline前，按序完成compiler_lab实验
     5. 复习，做课后练习，if (碰到问题)　到微信/网络学堂上提问;
-    6. 在考试周参加期末考试;
     }
-
+  在考试周参加期末考试;
 ```
 ## 课程参考书
 - Compilers：Principles, Techniques, and Tools， Alfred V.Aho, Ravi Sethi, Jeffrey D.Ullman, Addison Wesley, 2007（龙书）
