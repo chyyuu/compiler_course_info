@@ -19,11 +19,16 @@ All papers included related projects with source code. These excellent papers ad
 
 ## 选题一： Staitc Analysis to Find Bugs/Rules
  - [Improving integer security for systems with Kint](http://pdos.csail.mit.edu/papers/kint:osdi12.pdf),OSDI 2012
+   - [Kint Project](http://css.csail.mit.edu/kint/)
  - [Verifying Systems Rules Using Rule-Directed Symbolic Execution](http://www.cs.columbia.edu/~junfeng/papers/woodpecker-asplos13.pdf) ASPLOS 2013
+   - project方面可找陈老师要
  - [Juxta: Cross-checking Semantic Correctness for File Systems](https://taesoo.gtisc.gatech.edu/pubs/2015/min:juxta.pdf), SOSP 2015
+   - [juxta project](https://github.com/sslab-gatech/juxta)
  - [RID: Finding Reference Count Bugs with Inconsistent Path Pair Checking](http://dl.acm.org/citation.cfm?doid=2872362.2872389), ASPLOS 2016
+   - project方面可找陈老师要 
  - [APISan: Sanitizing API Usages through Semantic Cross-checking](https://sslab.gtisc.gatech.edu/assets/papers/2016/yun:apisan.pdf) USENIX SECURITY 2016
- 
+   - [apisan project](https://github.com/sslab-gatech/apisan)
+
 ### 具体要求
 1. 深入阅读上述列出的**一篇论文**，理解设计思路，写出阅读报告，并能够给老师做汇报
 2. 对论文中的project，能够编译/运行并重现论文中的实验结果，写出实验分析报告，并能够给老师做汇报
