@@ -163,7 +163,7 @@ h3 {
 
 .tcMenuPanel
 {
-	background:#6b0202;
+	background:#5c307d;
 	jdisplay:table-cell;
 	jjfloat:left;
 	width:368px;
@@ -421,7 +421,7 @@ h3 {
 
 #tcNarrowModeMenu
 {
-	background-color:#bf5122;
+	background-color:#5c307d;
 	jmin-height:100%;
 	text-align:center;
 	display:table;
