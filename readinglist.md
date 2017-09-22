@@ -48,6 +48,8 @@ All papers included related projects with source code. These excellent papers ad
 ## 选题二： Language improvement for security/safety
  - [Secure Virtual Architecture: A Safe Execution Environment for Commodity Operating Systems](http://llvm.org/pubs/2007-SOSP-SVA.pdf)， SOSP 2007
 
+   - [SVA project](https://github.com/jtcriswell/SVA)
+   
 ### 具体要求
 1. 深入阅读上述列出的**一篇论文**，理解设计思路，写出阅读报告，并能够给老师做汇报
 2. 对论文中的project，能够编译/运行并重现论文中的实验结果，写出实验分析报告，并能够给老师做汇报
@@ -57,6 +59,9 @@ All papers included related projects with source code. These excellent papers ad
 
 ## 选题三： Verification for system correctness
  - [Push-Button Verification of File Systems via Crash Refinement.](http://locore.cs.washington.edu/papers/sigurbjarnarson-yggdrasil.pdf),OSDI 2016
+
+   - [yggdrasil project](http://locore.cs.washington.edu/yggdrasil/)
+   
  - [Hyperkernel: Push-Button Verification of an OS Kernel](https://www.sigops.org/sosp/sosp17/program.html), SOSP 2017
 
 ### 具体要求
