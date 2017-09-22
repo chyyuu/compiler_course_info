@@ -13,7 +13,7 @@
 * [选题九](#选题九静态检查程序的验证)
 * [选题十](#选题十编译器验证的翻译确认方法)
 
-All papers included related projects with source code. These excellent papers adopted theory and technology based on Compiler-related and other(such as data mining, machine learning,etc.) Technology.
+These papers included related projects with source code, and adopted theory and technology based on Compiler-related and other(such as data mining, machine learning,etc.) Technology.
 
 想进一步了解某篇论文或选定一篇论文或有自己的新颖想法作为拓展实验的目标后，请与王老师和陈老师联系。
 
