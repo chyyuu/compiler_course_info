@@ -1,0 +1,464 @@
+/*
+// Basic Reset
+*/
+html, body, div, object, iframe, jh1, jh2, jh3, jh4, jh5, jh6, jp, blockquote, jol, jul, li, form, fieldset, legend, label, table, header, footer, nav, section, tr, td
+{ 
+	margin: 0; 
+	padding: 0;
+	/*border: 0;*/
+}
+
+/*
+// Element Overrides
+*/
+
+*
+{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.read {
+	color: #FF8800;
+}
+.white{
+	color:white;
+}
+html, body
+{
+	height:100%;
+	font-family:Arial;
+	font-size:12pt;
+    background:#ffffff;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+/*	overflow:hidden; */ /* Use this if you want to make the content scrollable, but the menu fixed */
+	line-height:1.42857143; /* matches the setting in bootstrap */
+}
+
+h1
+{
+	font-size:245%;
+	color:#000;
+	/*font-weight:bold;*/
+	text-align:left;
+	/*text-shadow:4px 4px 4px rgba(0,0,0,0.5);*/
+}
+
+h2
+{
+	/*font-size:130%;*/
+	color:#000000;
+	font-weight:bold;
+	text-align:left;
+	jfont-family:"canada-type-gibson";
+}
+
+h3
+{
+	font-size:110%;
+	font-weight:bold;
+	color:#000000;
+	text-align:left;
+}
+
+/* matches the setting in bootstrap */
+h1, h2, h3
+{
+	margin-top:20px;
+	margin-bottom:10px;
+	line-height:1.1;
+}
+
+/* matches the setting in bootstrap */
+ol, ul
+{
+	margin-top:0;
+	margin-bottom:10px;
+}
+
+a
+{
+	color:#bf5122;
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:none;
+}
+
+a:hover
+{
+	color:#000000;
+}
+
+ul {
+    list-style-type: square;
+}
+
+p {
+    margin: .4em 0 .5em 0;
+    line-height: 1.5em;
+}
+
+pre code, .w, .nc
+{
+	color:#ffffff !important;
+}
+
+/*
+// Custom Classes
+*/
+
+div.news-page.news-item {
+    border-top: 1px solid #777777;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+h3 {
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 90%
+}
+*/
+
+/*
+.t_projects th {
+    background-color: #DBEBFF;
+}
+
+.t_projects table, th, td {
+    border: 1px solid #ccc;
+    font-size: 80%;
+}
+*/
+
+
+/*
+// Required for _isEnhanced()
+*/
+#cssCheck
+{
+	font-weight:800;
+}
+
+.tcOuter
+{
+	jmin-height:100%;
+	height:100%;
+}
+
+/*.tcInner*/
+/*{*/
+	/*height:100%;*/
+/*}*/
+
+.tcMain
+{
+	height:100%;
+	width:100%;
+	display:table;
+}
+
+.tcMenuPanel
+{
+	background:#6b0202;
+	jdisplay:table-cell;
+	jjfloat:left;
+	width:368px;
+	jborder-right:1px solid #c29993;
+	jheight:100%;
+	jbox-shadow:0px 0 10px rgba(0, 0, 0, 1);	/* doesn't work with table-cell */
+	jdisplay:inline-block;
+	vertical-align:top;
+	position:relative;
+	display:none;
+}
+
+.tcMenuPanel ol, .tcMenuPanel ul, #tcNarrowModeMenu ul
+{ 
+	margin: 0; 
+	padding: 0;
+	border: 0;
+}
+
+.tcMenu
+{
+	jdisplay:none;
+	width:100%;
+}
+
+/*
+.tcMenu a
+{
+	font-style:normal;
+	font-weight:normal;
+	color:#000000;
+}
+.tcMenu a:hover
+{
+	color:#bf5122;
+}
+*/
+
+.tcContentPanel
+{
+	display:table-cell;
+	width:100%;
+	jjmargin-left:368px;
+	jdisplay:inline-block;
+	vertical-align:top;
+	padding:1em;
+	padding-top:0;
+	jheight:100%;		/* if you use this, the height will always be exactly the browser height */
+	min-height:100%;	/* ensures that background continues to the full height of the browser */
+	joverflow:auto;
+	jbackground-color:#d8604c;
+	/*background-color:#bf5122;*/
+	border-left:1px solid #c29993;
+	box-shadow:inset 12px 0px 12px -8px rgba(0,0,0,0.5);	/* inset shadow, left-side only */
+	text-align:center;
+	/*background-image: url( ../images/tianocore_v2_BG.png );*/
+	background-repeat:no-repeat;
+	background-origin:content-box;
+}
+
+.tcContent
+{
+	display:inline-block;
+}
+
+.tcContentHeader
+{
+	jdisplay:inline-block;
+	jpadding-top:1em;
+	jpadding-bottom:0.5em;
+	jfont-size:3em;
+	/*background-color:#bf5122;*/
+}
+
+.tcFrontPage.tcContentMain
+{
+	background-color:inherit;
+	padding:0;
+}
+
+.tcContentMain
+{
+	display:inline-block;
+	background-color:#ffffff;
+	border-radius:18px;
+	width:100%;
+	/*max-width:1140px;*/
+	text-align:left;
+	jmargin:0 2em;
+	padding:1em 1em;
+	/*box-shadow:4px 4px 4px rgba(0, 0, 0, 0.5);*/
+}
+
+.tcFrontPage .tcContentMain
+{
+	background:none;
+	color:#ffffff;
+	font-size:1.5em;
+	padding:0;
+	box-shadow:none;
+}
+.tcContentHeader.tcFrontPage
+{
+	font-size:1em;
+}
+
+.tcLogoArea
+{
+	width:266px;
+	height:160px;
+	/*padding-left:25px;*/
+	text-align: center;
+	line-height:160px;
+	color:white;
+	font-size:40px;
+	font-weight:400;
+}
+
+.tcMenuItem
+{
+	border-bottom:1px solid #b9b9b9;
+	padding:0.2em;
+	font-size:1.5em;
+	padding-left:2em;
+	list-style-type:none;
+	list-style-position:inside;
+}
+.tcMenuItem a
+{
+	color:#ffffff !important;
+	font-weight:normal !important;
+	font-style:normal !important;
+}
+.tcMenuItem a:hover
+{
+	color:#000000 !important;
+}
+
+.tcMenuItemSelected a
+{
+}
+
+
+
+.tcMenuItemSelected .tcMenuMarker:before
+{
+    content: "▪";	
+	position:absolute;
+	left:1em;
+	color:#fff !important;
+}
+
+.tcButton
+{
+	display:inline-block;
+	border-radius:8px;
+	border:3px solid #ff7012;
+	background-color:#ffffff;
+	padding:0.25em;
+	box-shadow:2px 4px 4px rgba(0, 0, 0, 0.5);
+	margin-top:1em;
+	color:#bf5122 !important;
+	font-style:normal !important;
+	font-weight:bold !important;
+}
+.tcButton:hover
+{
+	background-color:#bf5122;
+	color:#ffffff !important;
+}
+.tcButton a
+{
+	jfont-weight:bold;
+	jfont-style:normal;
+	jcolor:#bf5122;
+}
+.tcButton a:hover
+{
+	jcolor:#ffffff !important;
+}
+
+.tcFrontPageButtons
+{
+	text-align:left;
+	margin-top:1em;
+}
+
+.tcFooter
+{
+	display:inline-block;
+	jposition:absolute;
+	jbottom:0;
+	padding-top:2em;
+	color:#000000;
+	jbackground-color:#00ff00;
+	jmargin-left:368px;
+	jwidth:100%;
+}
+.tcFooter a
+{
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.tcFooter a:hover
+{
+	color:#ffffff;
+}
+
+.tcNarrowModeHeader
+{
+	background-color:#ffffff;
+	padding:1em;
+	position:fixed;
+	width:100%;
+	box-shadow:4px 4px 8px rgba(0,0,0,0.5);
+}
+
+.tcNavBars
+{
+	font-size:1.5em;
+	color:#bf5122;
+	text-align:right;
+}
+
+.tcNavBarItem
+{
+	cursor:hand;
+	cursor:pointer;
+}
+
+.tcMenuBar
+{
+	font-size:1.2em;
+	margin-left:0.5em;
+}
+
+.tcNavBarArrowLeft
+{
+	position:relative;
+	top:-2px;
+}
+
+.tcNavBarArrowRight
+{
+	position:relative;
+	top:-2px;
+	margin-left:0.25em;
+}
+
+.tcWideOnly
+{
+	display:none;
+}
+
+#tcNarrowModeMenu
+{
+	background-color:#bf5122;
+	jmin-height:100%;
+	text-align:center;
+	display:table;
+	width:100%;
+	height:100%;
+}
+
+#tcNarrowModeMenu a
+{
+	color:#ffffff;
+}
+
+#tcNarrowModeMenu .tcMenuItem
+{
+	padding-left:0;
+}
+
+.tcNarrowMenuFooterItems
+{
+	font-size:0.8em;
+}
+.tcNarrowModeHeaderSpacer
+{
+	display:table-row;
+}
+
+.tcSocialIcons
+{
+	width:100%;
+	font-size:1.6em;
+	color:#d8604c;
+}
+.tcSocialIcons a
+{
+	color:#bf5122;
+}
+.tcSocialIcons a:hover
+{
+	color:#000000;
+}
