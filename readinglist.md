@@ -1,5 +1,15 @@
 
 # 编译原理课拓展实验
+**目录**
+
+* [选题一](#选题一-staitc-analysis-to-find-bugsrules)
+* [选题二](#选题二-language-improvement-for-securitysafety)
+* [选题三](#选题三-verification-for-system-correctness)
+* [选题四](#选题四编译器优化方法)
+* [选题五](#选题五面向基因电路或dna计算机的编译器)
+* [选题六](#选题六面向生物化学试验的编译器)
+* [选题七](#选题七开放性问题新的机器学习语言及其编译器)
+
 
 All papers included related projects with source code. These excellent papers adopted theory and technology based on Compiler-related and other(such as data mining, machine learning,etc.) Technology.
 
@@ -72,7 +82,7 @@ All papers included related projects with source code. These excellent papers ad
 用Python语言或Java语言重写BioCoder，如有必要，可进一步优化和完善生化试验语言的特性。
 完成至少8页的文献调研报告，报告以双栏论文格式呈现，附有参考文献，中英文不限。参考文献应尽可能完善，如同时实现原型系统则更佳。
 
-## 选题七：开放性问题】新的机器学习语言及其编译器
+## 选题七：开放性问题：新的机器学习语言及其编译器
 目前，主流的机器学习编程采用MATLAB、R、Python、Java、ELM等，需要编程人员具有机器学习基础与实际编程经验，通过问题分析与建模，建立机器学习模型并训练得到模型参数。对于基于神经网络的机器学习模型，还需要通过Tensorflow、Caffe、Theano等框架搭建合适的神经网络结构。思考如何创立一种新的机器学习语言，使得不具备机器学习基础的应用人员能够完成基本的程序设计，提出自己的机器学习要求与数据输入。对应的编译器可以根据以往的求解问题经验，编译程序，产生合适的机器学习模型或神经网络结构，并编译生成Tensorflow、Caffe、Theano等框架上可以运行的代码。该机器学习语言和编译器在未来的类脑计算机上将有重要的应用价值。
 
 
