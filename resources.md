@@ -204,6 +204,16 @@
   * [tisp](https://github.com/raviqqe/tisp) - "Time is Space" Programming Language Interpreter.
 
 ## Automata
-
+  * [Regular Expression to NFA (Non-Deterministic Finite Automata)](http://hackingoff.com/compilers/regular-expression-to-nfa-dfa)
+  *[Convert NFA to DFA Online](http://hackingoff.com/compilers/nfa-to-dfa-conversion)
+  *[Scanner Generator. Regular Expressions to NFA, DFA, and Lexical Analyzer](http://hackingoff.com/compilers/scanner-generator)
+  
+## context free grammar
+  * [context free grammar checker](http://mdaines.github.io/grammophone/)
+  *[Generate Predict, First, and Follow Sets from EBNF (Extended Backus Naur Form) Grammar](http://hackingoff.com/compilers/predict-first-follow-set)
+  *[LL(1) Parser Generator. First, Follow, & Predict Sets. Table](http://hackingoff.com/compilers/ll-1-parser-generator)
+  *[LR(0) Parser Generator. Grammar to NFA, DFA, Table](http://hackingoff.com/compilers/lr-0-parser-generator)  
+  *[SLR(1) Parser Generator. Grammar to NFA, DFA, Table](http://hackingoff.com/compilers/slr-1-parser-generator) 
+  
 ## Reference
 - [aalhour's awesome-compilers](https://github.com/aalhour/awesome-compilers)
