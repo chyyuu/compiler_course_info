@@ -13,7 +13,7 @@
   + [Lex&Yacc](#lexyacc)
   + [Educational and Toy Projects](#educational-and-toy-projects)
   + [Automata](#automata)
-  + [Context-Free Grammr](#context-free-grammar)
+  + [Context-Free Grammar](#context-free-grammar)
   
 -----------------------------------------
 # Books
