@@ -2,6 +2,7 @@
 # 编译原理课拓展实验
 **目录**
 
+* [选题零](#选题零-编译器for新语言or新硬件支持)
 * [选题一](#选题一-staitc-analysis-to-find-bugsrules)
 * [选题二](#选题二-language-improvement-for-securitysafety)
 * [选题三](#选题三-verification-for-system-correctness)
@@ -14,6 +15,11 @@
 * [选题十](#选题十编译器验证的翻译确认方法)
 
 大部分论文都有对应的开放源码的项目，且与编译等技术紧密相关。想进一步了解某篇论文或选定一篇论文或有自己的新颖想法作为拓展实验的目标后，请与王老师和陈老师联系。
+
+## 选题零：编译器for新语言or新硬件支持
+- [rust language](https://www.rust-lang.org/en-US/)
+- [go language](https://golang.org/)
+- [TVM for ML hardware](https://www.cs.washington.edu/tr/2017/12/UW-CSE-17-12-01.pdf)
 
 ## 选题一： Staitc Analysis to Find Bugs/Rules
  - [Improving integer security for systems with Kint](http://pdos.csail.mit.edu/papers/kint:osdi12.pdf),OSDI 2012
