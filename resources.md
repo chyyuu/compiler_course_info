@@ -215,6 +215,17 @@
   * [LL(1) Parser Generator. First, Follow, & Predict Sets. Table](http://hackingoff.com/compilers/ll-1-parser-generator)
   * [LR(0) Parser Generator. Grammar to NFA, DFA, Table](http://hackingoff.com/compilers/lr-0-parser-generator)  
   * [SLR(1) Parser Generator. Grammar to NFA, DFA, Table](http://hackingoff.com/compilers/slr-1-parser-generator) 
+
+## rust lang
+  * [rust lang](https://www.rust-lang.org/en-US/)
+  * [awesome-rust](https://github.com/rustcc/awesome-rust)
+  * [rust-by-example-cn](https://github.com/rust-lang-cn/rust-by-example-cn)
+  * [rust lang book cn ver2](https://github.com/KaiserY/trpl-zh-cn)
+  * [Rust Forge](https://forge.rust-lang.org/)
+  * [rustc-guide](https://rust-lang-nursery.github.io/rustc-guide/)
+  * [docs for rust](https://docs.rs/)
+  * [rust crates](https://crates.io/)
+  * [rust main docs](https://www.rust-lang.org/zh-CN/documentation.html)
   
 ## Reference
 - [aalhour's awesome-compilers](https://github.com/aalhour/awesome-compilers)
