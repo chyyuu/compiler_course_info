@@ -14,7 +14,7 @@
   + [Educational and Toy Projects](#educational-and-toy-projects)
   + [Automata](#automata)
   + [Context-Free Grammar](#context-free-grammar)
-  
+ * [rust lang](#rust-lang) 
 -----------------------------------------
 # Books
 
