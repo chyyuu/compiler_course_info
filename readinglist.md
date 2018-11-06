@@ -74,8 +74,9 @@
 
    - [yggdrasil project](http://locore.cs.washington.edu/yggdrasil/)
    
- - [Hyperkernel: Push-Button Verification of an OS Kernel](https://www.sigops.org/sosp/sosp17/program.html), SOSP 2017
-
+ - [Hyperkernel: Push-Button Verification of an OS Kernel](https://unsat.cs.washington.edu/papers/nelson-hyperkernel.pdf), SOSP 2017
+   - [hyper kernel project](https://github.com/locore/hv6)
+   
 ### 具体要求
 1. 深入阅读上述列出的**一篇论文**，理解设计思路，写出阅读报告，并能够给老师做汇报
 2. 对一篇论文中的project，能够编译/运行并重现论文中的实验结果，写出实验分析报告，并能够给老师做汇报
