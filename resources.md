@@ -229,3 +229,6 @@
   
 ## Reference
 - [aalhour's awesome-compilers](https://github.com/aalhour/awesome-compilers)
+
+## compiler course workshop 2019
+ - http://s4lab.ustc.edu.cn/2019SysCoursesWorkshop/list.htm
