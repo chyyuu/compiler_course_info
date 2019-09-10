@@ -155,6 +155,11 @@
 2. 对论文中的基于LLVM，GCC，ORC（Open64）或CompCert的project，如果能找到源码的，则可以尝试编译/运行并重现论文中的实验结果，写出实验分析报告，并能够给老师做汇报
 3. 基于LLVM，GCC，ORC（Open64）或CompCert，参考以上论文中的工作，尝试实现针对某种优化的翻译确认程序（基本原型即可），写出实验报告，并能够给老师做汇报。
 
+## 自选实验
+
+打分:
+
+A~D档：对应于完成Decaf实验的 1）必做实验（占总评40%）；2）必做实验+PA4/PA5（占总评50%）；3）必做实验+PA4&PA5（占总评60%）；4）独一档（拓展实验，总评后加5分）。各档次最高得分同Decaf实验。
 
 ## 自选一：一种可重构包解析器硬件配置描述语言P3的编译器实现
 
@@ -169,14 +174,38 @@ P3是一种用于实现可重构网络数据包解析器的专用硬件配置描
 3. 实现从P3源程序至汇编级中间语言代码的完整翻译过程，能将所提供的P3程序样例正确翻译至对应的汇编级中间语言代码，并实现对应于文档[1]中类型系统的完整类型检查。（C档）
 4. 实现从P3源程序至汇编级中间语言代码的完整翻译过程，并实现对应于文档[1]中类型系统的完整类型检查，除能将所提供的P3程序样例正确翻译至对应的汇编级中间语言代码之外，能通过更多的样例程序测试，实现较高的覆盖率，基本可以被硬件设计者接受。更多的样例程序由硬件设计者提供或者自行设计，如果软工作业有需求，可考虑联合实验，探讨样例程序自动生成等课题。（D档）。
 
-NOTICE: A~D档：对应于完成Decaf实验的 1）必做实验；2）必做实验+PA4/PA5；3）必做实验+PA4&PA5；4）全部PA1~PA5 +拓展实验。各档次最高得分同Decaf实验。
-
 补充说明：
 
 1. 实现语言不限；
-2. 如果在证明辅助工具Coq环境下实现，可免去词法和语法分析的实现，仅对所提供代码的结构和功能进行简述即可。
+2. 如果在交互式证明辅助工具Coq[2]环境下实现，可免去词法和语法分析的实现，仅对所提供代码的结构和功能进行简述即可。
+3. 如果可以做到A档的要求，可作为托展实验选题。
 
-Reference
+
+## 自选二：基于同步语言的显示模块开发工具原型的设计与实现
+
+传统的常规语言（如C语言）层次较低，不易使人们聚焦于问题本身，开发效率受到很大影响，并且其最大的不足是难于验证，于是基于模型/模型驱动的开发逐步兴起，在安全攸关领域由模型自动生成的代码（C代码为主）占比已据主导地位。比较著名的建模语言/工具如Simulink，Scade等。有一类建模语言称为同步语言 [3]，特别适合于实时控制系统的开发。所有同步语言均遵循同步假设（synchrony hypothesis），即每个周期内的计算（从输入值得到输出值）都是瞬间完成的。另外，同步语言的语义被要求具有确定性。同步假设以及确定性可以极大地简化实时系统的验证。著名的同步语言如Esterel，Lustre和 Signal。在基于同步语言的开发工具中，最著名的是Scade，其代码生成器将一种基于Lustre的建模语言翻译到C语言，该工具已渗透到我国航空、航天、轨道交通及核电等安全攸关领域。
+L2C项目[4]致力于基于Lustre的语言到C语言的可信代码生成器（或称L2C编译器）的研发，在交互式证明辅助工具Coq环境下实现。目前，L2C项目缺乏显示（display）模块开发工具相关的研究。Display模块是实际系统中非常重要的环节，用于实现人机交互。本选题拟探索基于同步语言Lustre的显示模块开发工具原型的设计与实现。可以挂靠L2C项目来完成，也可以独立探索。如果是前者，可基于L2C编译器及其源语言[5]来实现你的设计。如果是后者，建议基于Lustre V6语言[6]及其编译器。
+
+预期收获：1）独立开发小型编译工具的经验；2）了解同步编程的基本思想；3）独立探索基于同步模型的Display模块的实现方法。
+
+具体要求和分档情况：
+
+1. 自行设计或定制某种标记语言（如基于XML），与模型语言（类Lustre同步语言）以及图形库（如OpenGL）一起构建MVC（Model-View-Control）应用。目标是设计与实现此类应用的一个开发工具原型，为此需要实现解析过程、生成控制代码、与模型代码（目标C代码）以及图形库应用接口实现有机对接。能够实现基本框架设计，可以实现一个简单的示例（如简易计算器之类的，具体可与老师协商）。（A档）
+2. 在A档基础上，支持Lustre语言的两类核心特性的建模：时钟算子（至少包含when和merge）和时态算子（包含pre/fby算子）。仅支持一个，划为B档；两个都支持，划为C档。
+3. 如果能够在A档、B档或C档的工作基础上，进一步设计一种控件之间协同操作的描述语言或者定义规则，并且能够有办法检查在模型层和目标（C代码）层之间的一致性。这一工作应与老师协商后确定。（D档）。
+
+补充说明：
+1. 实现语言不限。
+2. 如果可以做到A档的要求，可作为托展实验选题。
+3. 文献[7]的一些内容可供参考（形式化的部分不必细读，领会论文要义即可）。
+
+### Reference
 
 1. P3 Language Specification ( Draft). Available at: https://github.com/leeehh/P3_language_compiler/raw/master/P3_Compiler.pdf.
-
+2. Coq home, at http://coq.inria.fr/ .
+3. N. Halbwachs. Synchronous programming of reactive systems, a tutorial and commented bibliography. In Tenth International Conference on Computer-Aided Verification, CAV'98, Vancouver (B.C.), June 1998. LNCS 1427, Springer Verlag.
+4. L2C home, at http://soft.cs.tsinghua.edu.cn/l2c.
+5. Syntax of Lustre∗ for the Open Source L2C Compiler, at 
+   http://soft.cs.tsinghua.edu.cn/~wang/projects/L2C/Languages/LustreStar-v6.pdf .
+6. Lustre-V6 home, at http://www-verimag.imag.fr/Lustre-V6.html .
+7. Neelakantan R. Krishnaswami,Nick Benton, A Semantic Model for Graphical User Interfaces, ICFP'11, September 19-21, Tokyo.
