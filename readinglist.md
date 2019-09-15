@@ -12,6 +12,7 @@
 * [选题七](#选题七开放性问题新的机器学习语言及其编译器)
 * [选题八](#选题八静态检查程序的验证)
 * [选题九](#选题九编译器验证的翻译确认方法)
+* [选题十](#选题十移植CompCert编译器至alpha-CPU架构）
 
 **自选实验目录**
 
@@ -154,6 +155,21 @@
 1. 深入阅读上述列出的一篇论文，理解设计思路，写出阅读报告，并能够给老师做汇报
 2. 对论文中的基于LLVM，GCC，ORC（Open64）或CompCert的project，如果能找到源码的，则可以尝试编译/运行并重现论文中的实验结果，写出实验分析报告，并能够给老师做汇报
 3. 基于LLVM，GCC，ORC（Open64）或CompCert，参考以上论文中的工作，尝试实现针对某种优化的翻译确认程序（基本原型即可），写出实验报告，并能够给老师做汇报。
+
+## 选题十：移植CompCert编译器至alpha-CPU架构
+CompCert 编译器[1]是形式化验证的可信编译器的杰出代表。该编译器将 C 的一个重要子集 Clight 翻译为 PowerPC 汇编代码(后来也支持 IA32 和 ARM 后端,目前已扩展至可支持 64 位处理器以及开源的 RISC-V 体系结构),其编译过程划分为多个阶段,前端解析过程之后每个阶段的翻译正确性都借助证明辅助工具 Coq 进行了证明,且这些证明可由独立的证明检查器检查,这是迄今最强的形式化验证手段,达到了人们所能期望的最高可信程度[2]。Xuejun Yang等关于 Csmith[3] 的研究工作表明:CompCert 在正确性方面的表现明显优于常用的开源或商用 C 编译器。因 CompCert 编译器的杰出成就,该项目获得了 2012 年微软研究院 Verified Software Milestone 奖,其代表性论文[4]的作者 Xavier Leroy 获得了 2016 年度的十年前最有影响 POPL 论文奖。
+
+目前 CompCert 缺少对“alpha 架构”的支持,后者作为某重要国产处理器参考架构,本选题对于国内军用/民用关键行业有其实际意义。
+
+1. Xavier Leroy. Formal verification of a realistic compiler, Communications of The ACM - CACM , vol. 52, no. 7, pp. 107-115, 2009.
+2. Greg Morrisett, Technical Perspective: A Compiler's Story, Communications of theACM, Volume 52, Number 7, pp. 106-106, 2009.
+3. Xuejun Yang, Yang Chen, Eric Eide, John Regehr. "Finding and understanding bugs in C compilers". In Proceedings of the 2011 ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI 2011), pp.283-294, Jun.2011.
+4. X. Leroy. Formal certification of a compiler back-end or: programming a compiler with a proof assistant. Proceedings of the 33rd ACM SIGPLAN-SIGACT symposium on Principles of programming languages, 41(1):42–54, January 2006.
+
+### 具体要求
+1. 深入理解 CompCert 编译器(http://compcert.inria.fr/)后端部分代码, 参考某个或某几个架构的具体实现,添加 alpha后端,使用交互式证明辅助工具 Coq(Coq home, at http://coq.inria.fr/)或 Ocaml 语言实现。
+2.  至少要求可以正常生成 alpha 代码,相关证明代码可暂不考虑。
+
 
 ## 自选实验
 
