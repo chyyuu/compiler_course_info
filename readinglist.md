@@ -125,8 +125,9 @@
 目前，主流的机器学习编程采用MATLAB、R、Python、Java、ELM等，需要编程人员具有机器学习基础与实际编程经验，通过问题分析与建模，建立机器学习模型并训练得到模型参数。对于基于神经网络的机器学习模型，还需要通过Tensorflow、Caffe、Theano等框架搭建合适的神经网络结构。思考如何创立一种新的机器学习语言，使得不具备机器学习基础的应用人员能够完成基本的程序设计，提出自己的机器学习要求与数据输入。对应的编译器可以根据以往的求解问题经验，编译程序，产生合适的机器学习模型或神经网络结构，并编译生成Tensorflow、Caffe、Theano等框架上可以运行的代码。该机器学习语言和编译器在未来的类脑计算机上将有重要的应用价值。
 
 ## 选题八：静态检查程序的验证
-这里所说的静态检查程序，不是我们课程中介绍的用于静态语义分析的检查器，而是针对程序动态性质的静态检查。这些动态性质如，程序运行中是不是会发生除零，访问缓冲区是否会越界，等等。普通的找bug程序也通常是通过静态的方法检查动态运行中潜在的bug。与普通找bug的静态分析程序不同，我们这里强调的是要对静态检查程序进行验证。普通找bug程序往往是只能找到某一类bug中的一部分，不是全部，而且若是没找到bug的话，也不代表程序中没有此类bug。而对于经过验证的检查程序，我们的要求是能找到某一类bug的全部，而且如果没找到bug的话，可以保证一定不存在此类bug。
-以下论文介绍了一个基于CompCert编译器（http://compcert.inria.fr/）实现的经过验证的静态检查工具verasco的设计：
+这里所说的静态检查程序，不是我们课程中介绍的用于静态语义分析的检查器，而是针对程序动态性质的静态检查。这些动态性质如，程序运行中是不是会发生除零，访问缓冲区是否会越界，等等。普通的找bug程序也通常是通过静态的方法检查动态运行中潜在的bug。与普通找bug的静态分析程序不同，我们这里强调的是要对静态检查程序进行验证。普通找bug程序往往是只能找到某一类bug中的一部分，不是全部，而且若是没找到bug的话，也不代表程序中没有此类bug。而对于经过验证的检查程序，我们的要求是：如果没找到bug的话，可以保证一定不存在此类bug。然而，“误报”是允许出现的，但要尽可能“减小误报率”。
+
+以下论文介绍了一个基于CompCert编译器（ http://compcert.inria.fr ）实现的经过验证的静态检查工具verasco的设计：
 1. Jacques-Henri Jourdan, Vincent Laporte, Sandrine Blazy, Xavier Leroy, and David Pichardie. A formally-verified C static analyzer. In POPL 2015: 42nd symposium Principles of Programming Languages, pp 247-259. ACM Press, January 2015. Available at: https://hal.inria.fr/hal-01078386/document .
 
 有关Verasco的文档的项目源码，参见  http://compcert.inria.fr/verasco/ .
@@ -169,8 +170,8 @@ CompCert 编译器[1]是形式化验证的可信编译器的杰出代表。该�
 
 ### 具体要求
 1. 深入理解 CompCert 编译器(http://compcert.inria.fr/)后端部分代码, 参考某个或某几个架构的具体实现,添加 alpha后端,使用交互式证明辅助工具 Coq(Coq home, at http://coq.inria.fr/)或 Ocaml 语言实现。
-2.  至少要求可以正常生成 alpha 代码,相关证明代码可暂不考虑。
-
+2. 至少要求可以正常生成 alpha 代码,相关证明代码可暂不考虑。
+3. 若有兴趣，可先与老师联系，可能需要进一步向有关单位咨询。
 
 ## 自选实验
 
@@ -182,26 +183,34 @@ A~D档：对应于完成Decaf实验的 1）必做实验（占总评40%）；2）
 
 P3是一种用于实现可重构网络数据包解析器的专用硬件配置描述语言，服务于高安全等级网络的实现。本选题的核心内容是实现P3语言的一个编译器。
 主要的需求文档可参见[1]，其中包括P3语言的静态与动态语义的形式化定义，以及编译器中间语言和目标语言的参考语法。另外，感兴趣的同学可以进一步向老师索取P3语言及其编译结构的中文简介，以及一份P3程序样例及其对应的汇编级中间语言代码。
+
 预期收获：1）独立开发小型编译器的经验；2）初步接触程序语言静态语义（类型系统）和动态语义的形式化定义；3）独立探索某些非常规领域语言特性的实现方法。
 
 具体要求和分档情况：
 
-1. 实现从P3源程序至汇编级中间语言代码的基本翻译过程，含最基本的类型检查（如作用域检查），能将所提供的P3程序样例的最基本子集（具体应与老师协商）正确翻译至对应的汇编级中间语言代码。（A档）
-2. 实现从P3源程序至汇编级中间语言代码的基本翻译过程，含最基本的类型检查（如作用域检查），能将所提供的P3程序样例正确翻译至对应的汇编级中间语言代码。（B档）
+1. 实现从P3源程序至汇编级中间语言代码的基本翻译过程，含最基本的类型检查（如作用域分析/检查），能将所提供的P3程序样例的最基本子集（具体应与老师协商）正确翻译至对应的汇编级中间语言代码。（A档）
+2. 实现从P3源程序至汇编级中间语言代码的基本翻译过程，含最基本的类型检查（如作用域分析/检查），能将所提供的P3程序样例正确翻译至对应的汇编级中间语言代码。（B档）
 3. 实现从P3源程序至汇编级中间语言代码的完整翻译过程，能将所提供的P3程序样例正确翻译至对应的汇编级中间语言代码，并实现对应于文档[1]中类型系统的完整类型检查。（C档）
-4. 实现从P3源程序至汇编级中间语言代码的完整翻译过程，并实现对应于文档[1]中类型系统的完整类型检查，除能将所提供的P3程序样例正确翻译至对应的汇编级中间语言代码之外，能通过更多的样例程序测试，实现较高的覆盖率，基本可以被硬件设计者接受。更多的样例程序由硬件设计者提供或者自行设计，如果软工作业有需求，可考虑联合实验，探讨样例程序自动生成等课题。（D档）。
+4. 实现从P3源程序至汇编级中间语言代码的完整翻译过程，并实现对应于文档[1]中类型系统的完整类型检查，除能将所提供的P3程序样例正确翻译至对应的汇编级中间语言代码之外，能通过更多的样例程序测试，实现较高的覆盖率，基本可以被硬件设计者接受。更多的样例程序由硬件设计者提供或者自行设计，如果软件工程课的作业有需求，可考虑联合实验，探讨样例程序自动生成等课题。（D档）。
 
 补充说明：
 
 1. 实现语言不限；
 2. 如果在交互式证明辅助工具Coq[2]环境下实现，可免去词法和语法分析的实现，仅对所提供代码的结构和功能进行简述即可。
 3. 如果可以做到A档的要求，可作为托展实验选题。
+4. A档和B档的差别主要是前者仅考虑P3语言最核心子集，可忽略翻译过程的一些细节，以便节省工作量和时间。
 
+### Reference
+
+[1] P3 Language Specification ( Draft). Available at:
+   https://github.com/leeehh/P3_language_compiler/raw/master/P3_Compiler.pdf.
+
+[2] Coq home, at http://coq.inria.fr/ .
 
 ## 自选二：基于同步语言的显示模块开发工具原型的设计与实现
 
-传统的常规语言（如C语言）层次较低，不易使人们聚焦于问题本身，开发效率受到很大影响，并且其最大的不足是难于验证，于是基于模型/模型驱动的开发逐步兴起，在安全攸关领域由模型自动生成的代码（C代码为主）占比已据主导地位。比较著名的建模语言/工具如Simulink，Scade等。有一类建模语言称为同步语言 [3]，特别适合于实时控制系统的开发。所有同步语言均遵循同步假设（synchrony hypothesis），即每个周期内的计算（从输入值得到输出值）都是瞬间完成的。另外，同步语言的语义被要求具有确定性。同步假设以及确定性可以极大地简化实时系统的验证。著名的同步语言如Esterel，Lustre和 Signal。在基于同步语言的开发工具中，最著名的是Scade，其代码生成器将一种基于Lustre的建模语言翻译到C语言，该工具已渗透到我国航空、航天、轨道交通及核电等安全攸关领域。
-L2C项目[4]致力于基于Lustre的语言到C语言的可信代码生成器（或称L2C编译器）的研发，在交互式证明辅助工具Coq环境下实现。目前，L2C项目缺乏显示（display）模块开发工具相关的研究。Display模块是实际系统中非常重要的环节，用于实现人机交互。本选题拟探索基于同步语言Lustre的显示模块开发工具原型的设计与实现。可以挂靠L2C项目来完成，也可以独立探索。如果是前者，可基于L2C编译器及其源语言[5]来实现你的设计。如果是后者，建议基于Lustre V6语言[6]及其编译器。
+传统的常规语言（如C语言）层次较低，不易使人们聚焦于问题本身，开发效率受到很大影响，并且其最大的不足是难于验证，于是基于模型/模型驱动的开发逐步兴起，在安全攸关领域由模型自动生成的代码（C代码为主）占比已据主导地位。比较著名的建模语言/工具如Simulink，Scade等。有一类建模语言称为同步语言 [1]，特别适合于实时控制系统的开发。所有同步语言均遵循同步假设（synchrony hypothesis），即每个周期内的计算（从输入值得到输出值）都是瞬间完成的。另外，同步语言的语义被要求具有确定性。同步假设以及确定性可以极大地简化实时系统的验证。著名的同步语言如Esterel，Lustre和 Signal。在基于同步语言的开发工具中，最著名的是Scade，其代码生成器将一种基于Lustre的建模语言翻译到C语言，该工具已渗透到我国航空、航天、轨道交通及核电等安全攸关领域。
+L2C项目[2]致力于基于Lustre的语言到C语言的可信代码生成器（或称L2C编译器）的研发，在交互式证明辅助工具Coq环境下实现。目前，L2C项目缺乏显示（display）模块开发工具相关的研究。Display模块是实际系统中非常重要的环节，用于实现人机交互。本选题拟探索基于同步语言Lustre的显示模块开发工具原型的设计与实现。可以挂靠L2C项目来完成，也可以独立探索。如果是前者，可基于L2C编译器及其源语言[3]来实现你的设计。如果是后者，建议基于Lustre V6语言[4]及其编译器。
 
 预期收获：1）独立开发小型编译工具的经验；2）了解同步编程的基本思想；3）独立探索基于同步模型的Display模块的实现方法。
 
@@ -210,19 +219,24 @@ L2C项目[4]致力于基于Lustre的语言到C语言的可信代码生成器（�
 1. 自行设计或定制某种标记语言（如基于XML），与模型语言（类Lustre同步语言）以及图形库（如OpenGL）一起构建MVC（Model-View-Control）应用。目标是设计与实现此类应用的一个开发工具原型，为此需要实现解析过程、生成控制代码、与模型代码（目标C代码）以及图形库应用接口实现有机对接。能够实现基本框架设计，可以实现一个简单的示例（如简易计算器之类的，具体可与老师协商）。（A档）
 2. 在A档基础上，支持Lustre语言的两类核心特性的建模：时钟算子（至少包含when和merge）和时态算子（包含pre/fby算子）。仅支持一个，划为B档；两个都支持，划为C档。
 3. 如果能够在A档、B档或C档的工作基础上，进一步设计一种控件之间协同操作的描述语言或者定义规则，并且能够有办法检查在模型层和目标（C代码）层之间的一致性。这一工作应与老师协商后确定。（D档）。
+4. D档所述的协同操作描述语言可以基于Lustre语言设计也可以定义独立的语言。对于前者，可基于L2C编译器也可以基于其它Lustre语言编译器（如Lustre v4/v6官方版）实现。对于后者，需自行构建相应的解析和分析程序。
+5. D档需求所述的“检查在模型层和目标（C代码）层之间的一致性”，需要实现一个确认程序（validator），可借助各类方法和工具实现，如模型检验器（model checker）、自动求解器（如Z3）、符号执行或者直接编写静态检查程序。对于确认程序，不要求进行其正确性。若基于L2C编译器，可以考虑进一步的研究工作，实现一个确认程序，并证明其正确性（目标是在假设满足确认条件的前提下，可以证明模型层和目标层之间Display逻辑的语义等价关系），如有兴趣可与老师讨论具体方案。
 
 补充说明：
 1. 实现语言不限。
 2. 如果可以做到A档的要求，可作为托展实验选题。
-3. 文献[7]的一些内容可供参考（形式化的部分不必细读，领会论文要义即可）。
+3. 文献[5]的一些内容可供参考（形式化的部分不必细读，领会论文要义即可）。
 
 ### Reference
 
-1. P3 Language Specification ( Draft). Available at: https://github.com/leeehh/P3_language_compiler/raw/master/P3_Compiler.pdf.
-2. Coq home, at http://coq.inria.fr/ .
-3. N. Halbwachs. Synchronous programming of reactive systems, a tutorial and commented bibliography. In Tenth International Conference on Computer-Aided Verification, CAV'98, Vancouver (B.C.), June 1998. LNCS 1427, Springer Verlag.
-4. L2C home, at http://soft.cs.tsinghua.edu.cn/l2c.
-5. Syntax of Lustre∗ for the Open Source L2C Compiler, at 
+
+[1] N. Halbwachs. Synchronous programming of reactive systems, a tutorial and commented bibliography. In Tenth International Conference on Computer-Aided Verification, CAV'98, Vancouver (B.C.), June 1998. LNCS 1427, Springer Verlag.
+
+[2] L2C home, at http://soft.cs.tsinghua.edu.cn/l2c.
+
+[3] Syntax of Lustre∗ for the Open Source L2C Compiler, at 
    http://soft.cs.tsinghua.edu.cn/~wang/projects/L2C/Languages/LustreStar-v6.pdf .
-6. Lustre-V6 home, at http://www-verimag.imag.fr/Lustre-V6.html .
-7. Neelakantan R. Krishnaswami,Nick Benton, A Semantic Model for Graphical User Interfaces, ICFP'11, September 19-21, Tokyo.
+
+[4] Lustre-V6 home, at http://www-verimag.imag.fr/Lustre-V6.html .
+
+[5] Neelakantan R. Krishnaswami,Nick Benton, A Semantic Model for Graphical User Interfaces, ICFP'11, September 19-21, Tokyo.
