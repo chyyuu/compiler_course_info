@@ -54,7 +54,7 @@
 - 国内的编译原理教材
 
 ## ReadingList 编译原理课拓展实验
-希望看看编译技术如何用在科研方面的同学可看看[相关论文和对应的project](https://github.com/chyyuu/compiler_course_info/blob/master/readinglist.md)
-相关内容可以与老师协商作为拓展实验（占100分外的5分）
+希望看看编译技术如何用在科研方面或工程项目方面的同学可看看[相关论文和对应的project](https://github.com/chyyuu/compiler_course_info/blob/master/readinglist.md)
+相关内容可以与老师协商作为拓展实验（占100分外的5分），或自主实验（代替一般实验）
 
 ## [其他相关资源](https://github.com/chyyuu/compiler_course_info/blob/master/resources.md)
