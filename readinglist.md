@@ -51,7 +51,7 @@
 
  - [RID: Finding Reference Count Bugs with Inconsistent Path Pair Checking](http://dl.acm.org/citation.cfm?doid=2872362.2872389), ASPLOS 2016
 
-   - project方面可找陈老师要 
+   - project方面可找陈老师要
 
  - [APISan: Sanitizing API Usages through Semantic Cross-checking](https://sslab.gtisc.gatech.edu/assets/papers/2016/yun:apisan.pdf) USENIX SECURITY 2016
 
@@ -68,7 +68,7 @@
  - [Secure Virtual Architecture: A Safe Execution Environment for Commodity Operating Systems](http://llvm.org/pubs/2007-SOSP-SVA.pdf)， SOSP 2007
 
    - [SVA project](https://github.com/jtcriswell/SVA)
-   
+
 ### 具体要求
 1. 深入阅读上述列出的**一篇论文**，理解设计思路，写出阅读报告，并能够给老师做汇报
 2. 对一篇论文中的project，能够编译/运行并重现论文中的实验结果，写出实验分析报告，并能够给老师做汇报
@@ -80,10 +80,10 @@
  - [Push-Button Verification of File Systems via Crash Refinement.](http://locore.cs.washington.edu/papers/sigurbjarnarson-yggdrasil.pdf),OSDI 2016
 
    - [yggdrasil project](http://locore.cs.washington.edu/yggdrasil/)
-   
+
  - [Hyperkernel: Push-Button Verification of an OS Kernel](https://unsat.cs.washington.edu/papers/nelson-hyperkernel.pdf), SOSP 2017
    - [hyper kernel project](https://github.com/locore/hv6)
-   
+
 ### 具体要求
 1. 深入阅读上述列出的**一篇论文**，理解设计思路，写出阅读报告，并能够给老师做汇报
 2. 对一篇论文中的project，能够编译/运行并重现论文中的实验结果，写出实验分析报告，并能够给老师做汇报
@@ -144,7 +144,7 @@
 
 1. A. Pnueli, M. Siegel and E. Singerman, "Translation Validation", In Proceedings of TACAS'98, Lecture Notes in Computer Science, Volume 1384, pp 151-166, 1998.
 2. A. Pnueli and O. Shtrichman and M. Siegel. Translation validation for synchronous languages, In Proceedings of ICALP'1998. Lecture Notes in Computer Science, Volume 1443, pp 235-246,1998.
-3. G. C. Necula. Translation validation for an optimizing compiler. In PLDI 2000, pages 83–95. ACM Press, 2000.  
+3. G. C. Necula. Translation validation for an optimizing compiler. In PLDI 2000, pages 83–95. ACM Press, 2000.
 4. C. W. Barret, Y. Fang, B. Goldberg, Y. Hu, A. Pnueli, and L. Zuck. TVOC: A translation validator for optimizing compilers. In CAV2005, LNCS 3576, pages 291–295. Springer, 2005.
 5. J.-B. Tristan, P. Govereau and G. Morrisett. Evaluating Value-Graph Translation Validation for LLVM. In PLDI 2011, pages 295–305. ACM Press, 2011.
 6. J.-B. Tristan, X. Leroy. Formal verification of translation validators: A case study on instruction scheduling optimizations. In POPL, pages 17–27, 2008.
@@ -269,9 +269,94 @@ RUST语言是一种新型系统语言，用于操作系统等大型系统软件�
 
 [2] L2C home, at http://soft.cs.tsinghua.edu.cn/l2c.
 
-[3] Syntax of Lustre∗ for the Open Source L2C Compiler, at 
+[3] Syntax of Lustre∗ for the Open Source L2C Compiler, at
    http://soft.cs.tsinghua.edu.cn/~wang/projects/L2C/Languages/LustreStar-v6.pdf .
 
 [4] Lustre-V6 home, at http://www-verimag.imag.fr/Lustre-V6.html .
 
 [5] Neelakantan R. Krishnaswami,Nick Benton, A Semantic Model for Graphical User Interfaces, ICFP'11, September 19-21, Tokyo.
+
+
+
+## 自选五：在 Decaf 语言上加入 deductive verification 能力
+Deductive Verification 通过让程序员手动标注一些程序需要满足的性质（specification），来证明算法的正确性。
+当然，证明要在编译阶段进行——运行阶段的话不就是几个 if 的事情吗？
+
+例如二分查找算法
+```java
+    static int binsearch(int[] a, int v) {
+        int l; l  = 0; int r; r  = a.length(); int mid;
+
+        if (l == r) return -1;
+
+        while (l + 1 < r) {
+            mid = (l + r) / 2;
+            if (v == a[mid])        return mid;
+            else if (v < a[mid])    r = mid;
+            else                    l = mid;
+        }
+
+        if (v == a[l]) return l;
+        return -1;
+    }
+```
+
+我们希望证明的是
+> 在 a 有序的前提下,
+> binsearch 要么因为找不到 v 而返回 -1,
+> 要么返回一个下标 i 保证 a[i] 等于 v
+
+那么 specification 可能写作注释中一样
+```java
+    static int binsearch(int[] a, int v)
+        // requires isSorted(a)
+        // ensures v == -1  ==>  ! Contains(a, v)
+        // ensures v >= 0   ==>  v < a.length() && a[result] == v
+    {
+        int l; l  = 0; int r; r  = a.length(); int mid;
+
+        if (l == r) return -1;
+
+        while (l + 1 < r) {
+            mid = (l + r) / 2;
+            if (v == a[mid])        return mid;
+            else if (v < a[mid])    r = mid;
+            else                    l = mid;
+        }
+
+        if (v == a[l]) return l;
+        return -1;
+    }
+```
+
+你要完成的就是定义这样一套 specification 语言（嵌入在 Decaf 程序中），并且最后完成它们的验证。
+
+注意我们的工作和普通实验一样，是在已有 Decaf 框架上加新东西，即这套 specification 的语言。
+因此你最终的工作应当完全兼容原有 Decaf，方便测试评分。
+
+预期收获：1）和普通实验一样，只不过你的新特性是这套 specification 语言；2）软件形式化验证的实操经验；3）完全兼容 Decaf 并且支持形式化验证，开箱可用的编译器！
+
+具体要求和分档情况：
+0. 定义 specification 语言（支持一阶公式 i.e. forall），完成直到中间代码发射的所有工作，验证变成简化的运行期的 if 检查（A档）
+1. 定义 specification 语言（支持一阶公式），完成直到中间代码发射的所有工作，验证在编译期检查, 能验证没有递归和循环的程序（B档）
+2. 定义 specification 语言（支持一阶公式），完成直到中间代码发射的所有工作，验证在编译期检查, 能验证有递归和循环的程序（C档）
+
+### Reference
+[1] The Calculus of Computation - Decision Procedures with Applications to Verification: 基础知识，尤其是第 5 章
+
+[2] Dafny: 微软的实现的验证语言
+
+[3] Why3: 法国人开发的验证语言
+
+[4] Prusti (OOPSLA'19): 嵌入到 Rust 中而不是 decaf 中
+
+[5] Software Foundations: 形式化验证的形式化学习资料
+
+[6] [CMU 15-398](http://www.cs.cmu.edu/~emc/15-398/)
+
+[7] [CMU 15-414](https://www.cs.cmu.edu/~15414/)
+
+[8] [ENS semverif](https://www.di.ens.fr/~rival/semverif-2017/)
+
+[9] [z3](https://github.com/Z3Prover/z3): 大家都喜欢的 z3
+
