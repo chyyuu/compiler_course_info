@@ -290,8 +290,7 @@ RUST语言是一种新型系统语言，用于操作系统等大型系统软件�
 ### Reference
  - https://github.com/msiemens/RusTiny
  - [Freie Universität BerlinDepartment of Mathematics and Computer Science Institute of Computer ScienceBachelor Thesis
-Design of a Python-subset Compiler in Rust targeting ZPAQL]
-(https://pothos.github.io/papers/bsc_thesis_zpaql_compiler.pdf2htmlEX.html)
+Design of a Python-subset Compiler in Rust targeting ZPAQL](https://pothos.github.io/papers/bsc_thesis_zpaql_compiler.pdf2htmlEX.html)
 
 
 ## 自选五：在Decaf语言上加入deductiveverification能力
