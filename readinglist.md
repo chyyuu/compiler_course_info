@@ -6,25 +6,25 @@
 * [选题一 staitc-analysis-to-find-bugsrules](#选题一-staitc-analysis-to-find-bugsrules)
 * [选题二 language-improvement-for-securitysafety](#选题二-language-improvement-for-securitysafety)
 * [选题三 verification-for-system-correctness](#选题三-verification-for-system-correctness)
-* [选题四](#选题四编译器优化方法)
-* [选题五](#选题五面向基因电路或dna计算机的编译器)
-* [选题六](#选题六面向生物化学试验的编译器)
-* [选题七](#选题七开放性问题新的机器学习语言及其编译器)
-* [选题八](#选题八静态检查程序的验证)
-* [选题九](#选题九编译器验证的翻译确认方法)
-* [选题十](#选题十移植CompCert编译器至alpha架构)
+* [选题四 选题四编译器优化方法](#选题四编译器优化方法)
+* [选题五 面向基因电路或dna计算机的编译器](#选题五面向基因电路或dna计算机的编译器)
+* [选题六 面向生物化学试验的编译器](#选题六面向生物化学试验的编译器)
+* [选题七 开放性问题新的机器学习语言及其编译器](#选题七开放性问题新的机器学习语言及其编译器)
+* [选题八 静态检查程序的验证](#选题八静态检查程序的验证)
+* [选题九 编译器验证的翻译确认方法](#选题九编译器验证的翻译确认方法)
+* [选题十 移植CompCert编译器至alpha架构](#选题十移植CompCert编译器至alpha架构)
 
 **自选实验目录**
 
-* [自选一](#自选一一种可重构包解析器硬件配置描述语言P3的编译器实现)
-* [自选二](#自选二基于同步语言的显示模块开发工具原型的设计与实现)
-* [自选三](#自选三设计一个C语言的子集并完成此C语言子集的编译链接代码生成工作)
-* [自选四](#自选四设计一个RUST语言的子集并完成此RUST语言子集的编译链接代码生成工作)
-* [自选五](#自选五在Decaf语言上加入deductiveverification能力)
+* [自选一 一种可重构包解析器硬件配置描述语言P3的编译器实现](#自选一一种可重构包解析器硬件配置描述语言P3的编译器实现)
+* [自选二 基于同步语言的显示模块开发工具原型的设计与实现](#自选二基于同步语言的显示模块开发工具原型的设计与实现)
+* [自选三 C语言子集的编译器](#自选三设计一个C语言的子集并完成此C语言子集的编译链接代码生成工作)
+* [自选四 RUST语言子集的编译器](#自选四设计一个RUST语言的子集并完成此RUST语言子集的编译链接代码生成工作)
+* [自选五 deductive verification能力的Decaf语言](#自选五在Decaf语言上加入deductiveverification能力)
 
 大部分论文都有对应的开放源码的项目，且与编译等技术紧密相关。想进一步了解某篇论文或选定一篇论文或有自己的新颖想法作为拓展实验的目标后，请与王老师、姚老师或陈老师联系。
 
-## 选题零：编译器for新语言or新硬件支持
+## 选题零： 编译器for新语言or新硬件支持
 - [rust language](https://www.rust-lang.org/en-US/)
 - [go language](https://golang.org/)
 - [TVM for Machine Learning hardware](https://www.cs.washington.edu/tr/2017/12/UW-CSE-17-12-01.pdf)
