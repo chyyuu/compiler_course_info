@@ -231,6 +231,18 @@ L2C项目[2]致力于基于Lustre的语言到C语言的可信代码生成器（�
 3. 文献[5]的一些内容可供参考（形式化的部分不必细读，领会论文要义即可）。
 
 
+### Reference
+[1] N. Halbwachs. Synchronous programming of reactive systems, a tutorial and commented bibliography. In Tenth International Conference on Computer-Aided Verification, CAV'98, Vancouver (B.C.), June 1998. LNCS 1427, Springer Verlag.
+
+[2] L2C home, at http://soft.cs.tsinghua.edu.cn/l2c.
+
+[3] Syntax of Lustre∗ for the Open Source L2C Compiler, at
+   http://soft.cs.tsinghua.edu.cn/~wang/projects/L2C/Languages/LustreStar-v6.pdf .
+
+[4] Lustre-V6 home, at http://www-verimag.imag.fr/Lustre-V6.html .
+
+[5] Neelakantan R. Krishnaswami,Nick Benton, A Semantic Model for Graphical User Interfaces, ICFP'11, September 19-21, Tokyo.
+
 ## 自选三：设计一个C语言的子集并完成此C语言子集的编译链接代码生成工作
 
 C语言是一种简洁的系统语言，用于操作系统等大型系统软件的实现。本选题的核心内容是实现C语言子集的一个基于RUST的编译器/链接器/汇编器，能把基于C语言子集编写的操作系统运行在RISC-V硬件模拟器上。
@@ -247,6 +259,18 @@ C语言是一种简洁的系统语言，用于操作系统等大型系统软件�
 3. 实现从C源程序至汇编级中间语言代码的完整翻译过程，能将xv6（可用C语言子集进行修改简化）的全部C代码部分正确翻译至对应的汇编级中间语言代码，并实现类型系统的完整类型检查，能通过测试用例，确保生成的机器代码的正确性。（C档）
 4. 实现从xv6源程序（包含C和asm语言）至汇编级中间语言代码的完整翻译过程，并实现类型系统的完整类型检查，能完成部分代码优化的功能实现，可在RISC-V硬件模拟器中运行。如果软件工程课的作业有需求，可考虑联合实验，探讨样例程序自动生成等课题。（D档）。
 
+### Reference
+ - https://norasandler.com/2017/11/29/Write-a-Compiler.html
+ - https://github.com/onehr/crust
+ - https://github.com/buchenglei/rust-simple-c-compiler
+ - https://github.com/maekawatoshiki/rucc
+ - https://github.com/cmr/lets-build-a-compiler
+ - https://github.com/thepowersgang/rust-cc
+ - https://github.com/buchenglei/rust-simple-c-compiler
+ - https://github.com/asmoaesl/ox
+ - https://norasandler.com/2017/11/29/Write-a-Compiler.html 
+ - https://www.utam0k.jp/en/blog/2018/10/12/r9cc/
+ 
 ## 自选四：设计一个RUST语言的子集并完成此RUST语言子集的编译链接代码生成工作
 
 RUST语言是一种新型系统语言，用于操作系统等大型系统软件的实现。本选题的核心内容是实现RUST语言子集的一个基于RUST的编译器/链接器/汇编器，能把基于RUST语言子集编写的操作系统运行在RISC-V硬件模拟器上。
@@ -264,19 +288,10 @@ RUST语言是一种新型系统语言，用于操作系统等大型系统软件�
 
 
 ### Reference
-
-
-[1] N. Halbwachs. Synchronous programming of reactive systems, a tutorial and commented bibliography. In Tenth International Conference on Computer-Aided Verification, CAV'98, Vancouver (B.C.), June 1998. LNCS 1427, Springer Verlag.
-
-[2] L2C home, at http://soft.cs.tsinghua.edu.cn/l2c.
-
-[3] Syntax of Lustre∗ for the Open Source L2C Compiler, at
-   http://soft.cs.tsinghua.edu.cn/~wang/projects/L2C/Languages/LustreStar-v6.pdf .
-
-[4] Lustre-V6 home, at http://www-verimag.imag.fr/Lustre-V6.html .
-
-[5] Neelakantan R. Krishnaswami,Nick Benton, A Semantic Model for Graphical User Interfaces, ICFP'11, September 19-21, Tokyo.
-
+ - https://github.com/msiemens/RusTiny
+ - [Freie Universität BerlinDepartment of Mathematics and Computer Science Institute of Computer ScienceBachelor Thesis
+Design of a Python-subset Compiler in Rust targeting ZPAQL]
+(https://pothos.github.io/papers/bsc_thesis_zpaql_compiler.pdf2htmlEX.html)
 
 
 ## 自选五：在Decaf语言上加入deductiveverification能力
