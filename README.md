@@ -53,7 +53,8 @@
 - 国内的编译原理教材
 
 ## 基本实验
- - [labs of decaf compilers in java/scala/rust](https://github.com/decaf-lang)
+ - [labs of decaf compilers in java/scala/rust](https://github.com/decaf-lang) : 实验PA1~PA5覆盖词法分析，语法分析，语义分析，中间代码优化，后端代码生成等编译器的完整执行过程。
+ 
 ## ReadingList 编译原理课拓展实验
 希望看看编译技术如何用在科研方面或工程项目方面的同学可看看[相关论文和对应的project](https://github.com/chyyuu/compiler_course_info/blob/master/readinglist.md)
 相关内容可以与老师协商作为拓展实验（占100分外的5分），或自主实验（代替一般实验）
