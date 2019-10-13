@@ -24,6 +24,8 @@
 - [rust language](https://www.rust-lang.org/en-US/)
 - [go language](https://golang.org/)
 - [TVM for Machine Learning hardware](https://www.cs.washington.edu/tr/2017/12/UW-CSE-17-12-01.pdf)
+- [Bambu: a usable framework for HW-SW Co-Design](https://panda.dei.polimi.it/)
+- [LegUP:an open source high-level synthesis tool ](http://legup.eecg.utoronto.ca/)
 
 ### 具体要求
 1. 深入阅读上述列出的**论文**(Machine Learning hardware)或Go/Rust语言的某种新特征，理解其编译器针对其特征的设计思路，写出阅读报告，并能够给老师做汇报
