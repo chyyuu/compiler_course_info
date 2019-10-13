@@ -6,13 +6,9 @@
 * [选题一 staitc-analysis-to-find-bugsrules](#选题一-staitc-analysis-to-find-bugsrules)
 * [选题二 language-improvement-for-securitysafety](#选题二-language-improvement-for-securitysafety)
 * [选题三 verification-for-system-correctness](#选题三-verification-for-system-correctness)
-* [选题四 选题四编译器优化方法](#选题四编译器优化方法)
-* [选题五 面向基因电路或dna计算机的编译器](#选题五面向基因电路或dna计算机的编译器)
-* [选题六 面向生物化学试验的编译器](#选题六面向生物化学试验的编译器)
-* [选题七 开放性问题新的机器学习语言及其编译器](#选题七开放性问题新的机器学习语言及其编译器)
-* [选题八 静态检查程序的验证](#选题八静态检查程序的验证)
-* [选题九 编译器验证的翻译确认方法](#选题九编译器验证的翻译确认方法)
-* [选题十 移植CompCert编译器至alpha架构](#选题十移植CompCert编译器至alpha架构)
+* [选题四 静态检查程序的验证](#选题八静态检查程序的验证)
+* [选题五 编译器验证的翻译确认方法](#选题九编译器验证的翻译确认方法)
+* [选题六 移植CompCert编译器至alpha架构](#选题十移植CompCert编译器至alpha架构)
 
 **自选实验目录**
 
@@ -92,42 +88,7 @@
 4. 分析理解一篇论文中的project中代码的具体实现，能够升级到新版本（比如以前project升级到最新版本的z3等等），写出project详细分析报告，并能够给老师做汇报
 5. 分析理解一篇论文中的project中代码的具体实现，能够改进project（比如提升性能，增加功能，修复bug等），写出改进报告，并能够给老师做汇报
 
-## 选题四：编译器优化方法
-
-1. http://groups.csail.mit.edu/cag/metaopt/
-2.	Amir H. Ashouri et al., “MiCOMP: Mitigating the Compiler Phase-Ordering Problem Using Optimization Sub-Sequences and Machine Learning”, ACM Transactions on Architecture and Code Optimization (TACO), Volume 14 Issue 3, September 2017, Article No. 29. Online Available: http://dl.acm.org/citation.cfm?id=3124452
-3. Sameer Kulkarni, “IMPROVING COMPILER OPTIMIZATIONS USING MACHINE LEARNING”, PhD Dissertation, University of Delaware, 2014. Online Available: http://udspace.udel.edu/bitstream/handle/19716/13442/2014_Kulkarni_Sameer_PhD.pdf
-4. https://arxiv.org/abs/1605.07969v2
-
-### 具体要求
-调研内容以基于机器学习方法的编译器优化方法为主。
-完成至少8页的文献调研报告，报告以双栏论文格式呈现，附有参考文献，中英文不限。参考文献应尽可能完善，如同时实现原型系统则更佳。
-
-## 选题五：面向基因电路或DNA计算机的编译器
-1. Alec A. K. Nielsen et al., “Genetic circuit design automation”, Science, Vol. 352, Issue 6281, 01 Apr, 2016. Online Available: http://science.sciencemag.org/content/352/6281/aac7341
-2. http://www.qianlab.caltech.edu/SeesawCompiler/AONtoAO.php
-3. https://github.com/fanmin1010/DNA-Compiler
-4. Programming DNA Circuits: https://www.microsoft.com/en-us/research/project/programming-dna-circuits/
-5. https://luckytoilet.wordpress.com/2016/07/28/a-brief-introduction-to-dna-computing/
-
-### 具体要求
-部分参考阅读（请自行完善补充）。
-完成至少8页的文献调研报告，报告以双栏论文格式呈现，附有参考文献，中英文不限。参考文献应尽可能完善，如同时实现原型系统则更佳。
-
-## 选题六：面向生物化学试验的编译器
-
-[1] Vaishnavi Ananthanarayanan and William Thies, “Biocoder: A programming language for standardizing and automating biology protocols”, Journal of Biological Engineering, 2010, 4:13. Online Available: https://jbioleng.biomedcentral.com/articles/10.1186/1754-1611-4-13
-[2] https://www.microsoft.com/en-us/download/details.aspx?id=52556
-
-### 具体要求
-部分参考阅读（请自行完善补充）。
-用Python语言或Java语言重写BioCoder，如有必要，可进一步优化和完善生化试验语言的特性。
-完成至少8页的文献调研报告，报告以双栏论文格式呈现，附有参考文献，中英文不限。参考文献应尽可能完善，如同时实现原型系统则更佳。
-
-## 选题七：开放性问题：新的机器学习语言及其编译器
-目前，主流的机器学习编程采用MATLAB、R、Python、Java、ELM等，需要编程人员具有机器学习基础与实际编程经验，通过问题分析与建模，建立机器学习模型并训练得到模型参数。对于基于神经网络的机器学习模型，还需要通过Tensorflow、Caffe、Theano等框架搭建合适的神经网络结构。思考如何创立一种新的机器学习语言，使得不具备机器学习基础的应用人员能够完成基本的程序设计，提出自己的机器学习要求与数据输入。对应的编译器可以根据以往的求解问题经验，编译程序，产生合适的机器学习模型或神经网络结构，并编译生成Tensorflow、Caffe、Theano等框架上可以运行的代码。该机器学习语言和编译器在未来的类脑计算机上将有重要的应用价值。
-
-## 选题八：静态检查程序的验证
+## 选题四：静态检查程序的验证
 这里所说的静态检查程序，不是我们课程中介绍的用于静态语义分析的检查器，而是针对程序动态性质的静态检查。这些动态性质如，程序运行中是不是会发生除零，访问缓冲区是否会越界，等等。普通的找bug程序也通常是通过静态的方法检查动态运行中潜在的bug。与普通找bug的静态分析程序不同，我们这里强调的是要对静态检查程序进行验证。普通找bug程序往往是只能找到某一类bug中的一部分，不是全部，而且若是没找到bug的话，也不代表程序中没有此类bug。而对于经过验证的检查程序，我们的要求是：如果没找到bug的话，可以保证一定不存在此类bug。然而，“误报”是允许出现的，但要尽可能“减小误报率”。
 
 以下论文介绍了一个基于CompCert编译器（ http://compcert.inria.fr ）实现的经过验证的静态检查工具verasco的设计：
@@ -140,7 +101,7 @@
 2. 尝试对该论文工作的改进，如增加新的动态特性检查功能。因为难度很大，所以仅要求有设计思路和初步的实验结论。
 3. 若是有兴趣，可以尝试在L2C可信编译器项目基础上实现类似该论文工作。当然，我们也只是建议初步尝试。若能够有初步成果，我们诚邀将其成果进行进一步改进，并鼓励撰写相关的论文。正在建设中的开源L2C项目网页见：http://soft.cs.tsinghua.edu.cn/l2c 。
 
-## 选题九：编译器验证的翻译确认方法
+## 选题五：编译器验证的翻译确认方法
 编译器的验证主要有两种方案。一种是直接对翻译过程进行验证，如CompCert编译器（http://compcert.inria.fr/）的设计与实现。另外一种是翻译确认（translation validation）。翻译确认的方法不是直接验证翻译程序，而是用统一的语义框架为某一翻译过程的源和目标代码建模，两个模型之间定义一种特定的语义等价关系，设计一种可自动证明语义等价性的确认程序（返回成功与否，成功时或给出证明脚本，不成功时或给出反例）。两种方案各有利弊。前者是一种比较完美的解决方案，原理上可以保证源程序的一般性质都可以保持到目标程序，然而其缺点是难以扩展，一旦编译器有所变化，证明就可能需要大范围修改。翻译确认的方法只对编译器的输入和输出作检查，而不关心编译器的具体实现，因而具有较好的可重用性，然而，因确认程序本身是编译器的一部分，它必须是一个自动化的过程，这从理论上决定了它可能出现误报（false alarm），从而使程序员无所适从。实际上，根据各个翻译步骤的不同特点，将这两种方案混合使用是十分有益的做法。由于具有可重用性好的特点，翻译确认的方法非常适合于某些优化步骤的验证，优化算法的改进不会对确认程序造成影响。以下是相关工作的部分论文：
 
 1. A. Pnueli, M. Siegel and E. Singerman, "Translation Validation", In Proceedings of TACAS'98, Lecture Notes in Computer Science, Volume 1384, pp 151-166, 1998.
@@ -160,7 +121,7 @@
 2. 对论文中的基于LLVM，GCC，ORC（Open64）或CompCert的project，如果能找到源码的，则可以尝试编译/运行并重现论文中的实验结果，写出实验分析报告，并能够给老师做汇报
 3. 基于LLVM，GCC，ORC（Open64）或CompCert，参考以上论文中的工作，尝试实现针对某种优化的翻译确认程序（基本原型即可），写出实验报告，并能够给老师做汇报。
 
-## 选题十:移植CompCert编译器至alpha架构
+## 选题六:移植CompCert编译器至alpha架构
 
 CompCert 编译器[1]是形式化验证的可信编译器的杰出代表。该编译器将 C 的一个重要子集 Clight 翻译为 PowerPC 汇编代码(后来也支持 IA32 和 ARM 后端,目前已扩展至可支持 64 位处理器以及开源的 RISC-V 体系结构),其编译过程划分为多个阶段,前端解析过程之后每个阶段的翻译正确性都借助证明辅助工具 Coq 进行了证明,且这些证明可由独立的证明检查器检查,这是迄今最强的形式化验证手段,达到了人们所能期望的最高可信程度[2]。Xuejun Yang等关于 Csmith[3] 的研究工作表明:CompCert 在正确性方面的表现明显优于常用的开源或商用 C 编译器。因 CompCert 编译器的杰出成就,该项目获得了 2012 年微软研究院 Verified Software Milestone 奖,其代表性论文[4]的作者 Xavier Leroy 获得了 2016 年度的十年前最有影响 POPL 论文奖。
 
