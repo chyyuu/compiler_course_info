@@ -93,9 +93,13 @@
 ## 选题四：静态检查程序的验证
 这里所说的静态检查程序，不是我们课程中介绍的用于静态语义分析的检查器，而是针对程序动态性质的静态检查。这些动态性质如，程序运行中是不是会发生除零，访问缓冲区是否会越界，等等。普通的找bug程序也通常是通过静态的方法检查动态运行中潜在的bug。与普通找bug的静态分析程序不同，我们这里强调的是要对静态检查程序进行验证。普通找bug程序往往是只能找到某一类bug中的一部分，不是全部，而且若是没找到bug的话，也不代表程序中没有此类bug。而对于经过验证的检查程序，我们的要求是：如果没找到bug的话，可以保证一定不存在此类bug。然而，“误报”是允许出现的，但要尽可能“减小误报率”。
 
-以下论文介绍了一个基于CompCert编译器（ http://compcert.inria.fr ）实现的经过验证的静态检查工具verasco的设计：
+Prusti项目利用Rust的类型系统极大地简化了Rust程序的规范和验证。特别是从Rust编译器执行的程序的类型检查中提取了分离逻辑证明所需的所有权和与框架相关的信息; 用户规范会自动交织在一起，并专注于以类似于Rust程序表达式的语法表示的所需功能保证。
+
 1. [V. Astrauskas and P. Müller and F. Poli and A. J. Summers: Leveraging Rust Types for Modular Specification and Verification,OOPSLA, 2019.](http://pm.inf.ethz.ch/publications/getpdf.php?bibname=Own&id=AstrauskasMuellerPoliSummers19b.pdf) 
+
 有关Prusti项目的源码，参见 https://github.com/viperproject/prusti-dev
+
+以下论文介绍了一个基于CompCert编译器（ http://compcert.inria.fr ）实现的经过验证的静态检查工具verasco的设计：
 
 2. Jacques-Henri Jourdan, Vincent Laporte, Sandrine Blazy, Xavier Leroy, and David Pichardie. A formally-verified C static analyzer. In POPL 2015: 42nd symposium Principles of Programming Languages, pp 247-259. ACM Press, January 2015. Available at: https://hal.inria.fr/hal-01078386/document .
 
