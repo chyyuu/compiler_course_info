@@ -27,7 +27,7 @@
 3. 针对新的目标，使用论文中的project，发现新（论文中没有提到的）的result，写出分析报告，并能够给老师做汇报
 4. 分析理解一篇论文中的project中代码的具体实现，能够升级到新版本（比如以前project是基于llvm-3.6，现在升级到llmv-5.0等），写出project详细分析报告，并能够给老师做汇报
 5. 分析理解一篇论文中的project中代码的具体实现，能够改进project（比如提升性能，增加功能，修复bug等），写出改进报告，并能够给老师做汇报
-6. 把java版的decaf编译器用rust语言 or go语言重写一遍，看看新语言写编译器是否更快捷，安全，可靠，高性能。
+
 
 ## 选题一： Staitc Analysis to Find Bugs/Rules
  - [Improving integer security for systems with Kint](http://pdos.csail.mit.edu/papers/kint:osdi12.pdf),OSDI 2012
