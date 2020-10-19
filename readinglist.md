@@ -10,6 +10,7 @@
 * [选题五 编译器验证的翻译确认方法](#选题五编译器验证的翻译确认方法)
 * [选题六 移植CompCert编译器至alpha架构](#选题六移植CompCert编译器至alpha架构)
 * [选题七 针对TVM的神经网络训练计算图生成](#选题X1针对TVM的神经网络训练计算图生成)
+* [选题八 HVML 解释器参考实现](#选题八HVML 解释器参考实现)
 
 大部分论文都有对应的开放源码的项目，且与编译等技术紧密相关。想进一步了解某篇论文或选定一篇论文或有自己的新颖想法作为拓展实验的目标后，请与王老师、姚老师或陈老师联系。
 
@@ -155,3 +156,18 @@ CompCert 编译器[1]是形式化验证的可信编译器的杰出代表。该�
 2. 深入阅读理解 Pytorch 对于 TVM 框架的编译流程，理解 Pytorch 针对 TVM 框架实现的支持训练的神经网络的编译方法，写出阅读分析报告，并能够给老师做汇报；
 3. 参考 Pytorch 以 TVM 为目标进行编译的方法，实现基于 TVM 原生 IR 的支持训练的计算图生成，需实现特定算子对应的梯度算子。
 
+
+##  选题八:HVML 解释器参考实现
+
+HVML（the Hybrid Virtual Markup Language）是一种全新的、通用的、数据驱动的、虚拟标记语言。HVML 主要用于基于外部数据生成并更新实际的 HTML/XML 文档。在设计上，HVML 和传统的脚本语言有很大的不同，由于抽象层次高，为这类语言开发解释器有一定的挑战。
+
+有关 HVML 的规范草案以及介绍文章，可参阅：
+
+- [漫谈 HVML：它的由来和未来](https://github.com/HVML/hvml-docs/blob/master/zh/brief-introduction-to-hvml-zh.md)
+- [HVML 概览](https://github.com/HVML/hvml-docs/blob/master/zh/hvml-overview-zh.md)
+
+### 具体要求
+
+1. 理解 HVML 的设计原理和思路，发现其实际应用价值；
+1. 就 HVML 的设计，提供补充或者完善意见；
+1. 加入 HVML 解释器参考实现（<https://github.com/HVML/purring-cat>）项目组，参与关键模块（如 JSON 求值表达式解析及求值、解释执行模块、输出模块）的开发。
