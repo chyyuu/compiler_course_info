@@ -9,8 +9,7 @@
 * [选题四 静态检查与程序验证](#选题四静态检查与程序验证)
 * [选题五 编译器验证的翻译确认方法](#选题五编译器验证的翻译确认方法)
 * [选题六 移植CompCert编译器至alpha架构](#选题六移植CompCert编译器至alpha架构)
-* [选题X1 针对TVM的神经网络训练计算图生成](#选题X1针对TVM的神经网络训练计算图生成)
-* [选题X2 针对神经网络的自动求导与反向传播](#选题X2针对神经网络的自动求导与反向传播)
+* [选题七 针对TVM的神经网络训练计算图生成](#选题X1针对TVM的神经网络训练计算图生成)
 
 大部分论文都有对应的开放源码的项目，且与编译等技术紧密相关。想进一步了解某篇论文或选定一篇论文或有自己的新颖想法作为拓展实验的目标后，请与王老师、姚老师或陈老师联系。
 
@@ -140,7 +139,7 @@ CompCert 编译器[1]是形式化验证的可信编译器的杰出代表。该�
 2. 至少要求可以正常生成 alpha 代码,相关证明代码可暂不考虑。
 3. 若有兴趣，可先与老师联系，可能需要进一步向有关单位咨询。
 
-## 选题X1:针对TVM的神经网络训练计算图生成
+## 选题七:针对TVM的神经网络训练计算图生成
 
 * [TVM:Open Deep Learning Compiler Stack](https://tvm.apache.org/docs/) 
 * [TVM in Github](https://github.com/apache/incubator-tvm)
@@ -148,25 +147,11 @@ CompCert 编译器[1]是形式化验证的可信编译器的杰出代表。该�
 * [TVM for Pytorch](https://github.com/pytorch/tvm)
 * [神经网络与计算图 I](https://medium.com/tebs-lab/deep-neural-networks-as-computational-graphs-867fcaa56c9)
 * [神经网络与计算图 II](http://www.cs.cornell.edu/courses/cs5740/2017sp/lectures/04-nn-compgraph.pdf)
+* [神经网络推导和训练基础](https://www.zybuluo.com/hanbingtao/note/433855)
 
 ### 具体要求
 
 1. 深入阅读理解神经网络编译框架 TVM 的框架及文档，尤其是计算图部分代码，理解 TVM 框架中计算图的特征及设计思路，写出阅读报告，并能够给老师做汇报；
 2. 深入阅读理解 Pytorch 对于 TVM 框架的编译流程，理解 Pytorch 针对 TVM 框架实现的支持训练的神经网络的编译方法，写出阅读分析报告，并能够给老师做汇报；
 3. 参考 Pytorch 以 TVM 为目标进行编译的方法，实现基于 TVM 原生 IR 的支持训练的计算图生成，需实现特定算子对应的梯度算子。
-
-## 选题X2:针对神经网络的自动求导与反向传播
-
-* [TVM:Open Deep Learning Compiler Stack](https://tvm.apache.org/docs/) 
-* [TVM in github](https://github.com/apache/incubator-tvm)
-* [TVM for pytorch](https://github.com/pytorch/tvm)
-* [Autograd](https://github.com/HIPS/autograd)
-* [pytorch](https://github.com/pytorch/pytorch)
-* [神经网络推导和训练基础](https://www.zybuluo.com/hanbingtao/note/433855)
-
-### 具体要求
-
-1. 深入阅读理解 Autograd 或其他神经网络框架（如Pytorch，TensorFlow）中实现自动求导及反向传播的方法，理解框架中涉及的的算法及设计思路，写出阅读报告，并能够给老师做汇报；
-2. 深入阅读理解 Pytorch 对于 TVM 框架在训练流程中实现自动求导与反向传播的方法，写出阅读分析报告，并能够给老师做汇报；
-3. 针对 TVM 中涉及的不同算子，实现自动求导及反向传播的整个流程。
 
