@@ -58,12 +58,18 @@
 5. 分析理解一篇论文中的project中代码的具体实现，能够改进project（比如提升性能，增加功能，修复bug等），写出改进报告，并能够给老师做汇报
 
 ## 选题二： Language improvement for security/safety
- - [Secure Virtual Architecture: A Safe Execution Environment for Commodity Operating Systems](http://llvm.org/pubs/2007-SOSP-SVA.pdf)， SOSP 2007
+ - [2.1 Secure Virtual Architecture: A Safe Execution Environment for Commodity Operating Systems](http://llvm.org/pubs/2007-SOSP-SVA.pdf)， SOSP 2007
 
    - [SVA project](https://github.com/jtcriswell/SVA)
 
+ - 2.2 **How Rust optimizes async/await**
+   - [part1](https://tmandry.gitlab.io/blog/posts/optimizing-await-1/)
+   - [part2](https://tmandry.gitlab.io/blog/posts/optimizing-await-2/)
+   - [Life of an async fn](https://www.youtube.com/watch?v=ZHP9sUqB3Qs)
+   - []()
+ 
 ### 具体要求
-1. 深入阅读上述列出的**一篇论文**，理解设计思路，写出阅读报告，并能够给老师做汇报
+1. 深入阅读上述列出的**一篇论文/文章**，理解设计思路，写出阅读报告，并能够给老师做汇报
 2. 对一篇论文中的project，能够编译/运行并重现论文中的实验结果，写出实验分析报告，并能够给老师做汇报
 3. 针对新的目标(比如另外一个有bug的软件子系统/软件等)，使用论文中的project，发现新（论文中没有提到的）的bug/rule/result，写出分析报告，并能够给老师做汇报
 4. 分析理解一篇论文中的project中代码的具体实现，能够升级到新版本（比如以前project是基于llvm-3.6，现在升级到llmv-5.0等），写出project详细分析报告，并能够给老师做汇报
