@@ -235,3 +235,6 @@
 
 ## compiler course workshop 2019
  - http://s4lab.ustc.edu.cn/2019SysCoursesWorkshop/list.htm
+
+## Program Synthesis course
+ - [Introduction to Program Synthesis 6.S084/6.887 2020](https://people.csail.mit.edu/asolar/SynthesisCourse/index.htm)
