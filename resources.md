@@ -184,7 +184,10 @@
   * [8cc](https://github.com/rui314/8cc) - C Compiler supporting all C11 language features
   * [9cc](https://github.com/rui314/9cc) - NEXT of 8cc
     - [compiler book](https://www.sigbus.info/compilerbook) - 9cc book jp
+    - [9cc in rust](https://github.com/utam0k/r9cc)
   * [chibicc](https://github.com/rui314/chibicc) - NEXT of 9cc -- chibicc: A Small C Compiler
+    - [chibicc in rust](https://github.com/AK-10/rust_chibicc)
+    - [sumorucc-- chibicc in rust](https://github.com/hotiket/sumorucc)
   * [Black](http://www.is.ocha.ac.jp/~asai/Black/) - Scheme interpreter for the Reflective Programming Language "Black", by Kenichi Asai's.
     + Other sources: [GitHub Mirror](https://github.com/readevalprintlove/black).
     + Discussions: [HN](https://news.ycombinator.com/item?id=8558822).
@@ -210,6 +213,7 @@
     + Discussions: [HN](https://news.ycombinator.com/item?id=11395656).
   * [tinyc.c](http://www.iro.umontreal.ca/~felipe/IFT2030-Automne2002/Complements/tinyc.c) - Tiny-C language compiler in C.
   * [tisp](https://github.com/raviqqe/tisp) - "Time is Space" Programming Language Interpreter.
+  * [toy c compiler in rust--rucc](https://github.com/maekawatoshiki/rucc)
 
 ## Automata
   * [Regular Expression to NFA (Non-Deterministic Finite Automata)](http://hackingoff.com/compilers/regular-expression-to-nfa-dfa)
