@@ -171,6 +171,7 @@
 - [Python is a programming language that lets you work quickly](https://www.python.org/)
 - [OpenJDK is the open-source implementation of the Java](http://openjdk.java.net/)
 - [kotlin - a language which is 100% interoperable with Java Android](https://kotlinlang.org/)
+- [Online Compiler Explorer](https://godbolt.org/)
 
 ## LEX/YACC
 - [Python Lex-Yacc](http://www.dabeaz.com/ply/)
@@ -181,6 +182,9 @@
 ## Educational and Toy Projects
   * [C4](https://github.com/rswier/c4) - mini C Language Compiler in 4 Functions.
   * [8cc](https://github.com/rui314/8cc) - C Compiler supporting all C11 language features
+  * [9cc](https://github.com/rui314/9cc) - NEXT of 8cc
+    - [compiler book](https://www.sigbus.info/compilerbook) - 9cc book jp
+  * [chibicc](https://github.com/rui314/chibicc) - NEXT of 9cc -- chibicc: A Small C Compiler
   * [Black](http://www.is.ocha.ac.jp/~asai/Black/) - Scheme interpreter for the Reflective Programming Language "Black", by Kenichi Asai's.
     + Other sources: [GitHub Mirror](https://github.com/readevalprintlove/black).
     + Discussions: [HN](https://news.ycombinator.com/item?id=8558822).
