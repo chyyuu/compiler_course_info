@@ -178,8 +178,11 @@
 - [Online Compiler Explorer](https://godbolt.org/)
 
 ## LEX/YACC
+- [jison -- lex-yacc in javascript]([jison.org](http://jison.org/))
+  - [jison in github](https://github.com/zaach/jison)
+  - [jison-debugger](http://nolanlawson.github.io/jison-debugger/)
 - [Python Lex-Yacc](http://www.dabeaz.com/ply/)
-- [SLY--next python lex-yacc](https://github.com/dabeaz/sly)
+  - [SLY--next python lex-yacc](https://github.com/dabeaz/sly)
 - [ANTLR (ANother Tool for Language Recognition)--a powerful parser generator](http://www.antlr.org/)
 - [JFlex is a lexical analyzer generator written in Java](http://jflex.de/)
 - [byaccj is a parser generator written in Java](byaccj.sourceforge.net)
