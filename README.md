@@ -1,6 +1,6 @@
 # README
 
-# 清华大学编译原理课程（2020秋季）
+# 清华大学编译原理课程（2021秋季）
 
 计算机专业主干课， 编译程序（系统）是计算机系统的核心支撑软件， 贯穿程序语言、运行时系统、体系结构， 联系计算机科学和计算机系统的典范。
 
@@ -11,15 +11,7 @@
 
 ## 助教
 
-- 冀伟清 674725808@qq.com
-- 戴臻旸 daizy19@mails.tsinghua.edu.cn
-- 贾越凯 jyk19@mails.tsinghua.edu.cn
-- 寇明阳 kmy19@mails.tsinghua.edu.cn
-- 李晨昊 li-ch17@mails.tsinghua.edu.cn
-- 唐适之
-- 曾军
-- 张译仁
-- 谢兴宇
+- 寇明阳 唐适之 曾军 谢兴宇 刘润达 周智 陈之杨 杨耀良
 
 
 ## 教学目的
@@ -33,11 +25,11 @@
 
 ## 时间地点
 2020-09-15 至 2019-12-22
-- 每周二下午 1:30-3:05，六教6A314 陈
-- 每周二下午 1:30-3:05，六教6A203 姚
-- 每周二下午 3:20-4:55，六教6A314 王
+- 每周三下午 1:30-3:05，二教403 陈
 
- 
+  
+
+
 ## 本课程学习流程（for拿清华学分的同学）
 ```
   for (i=1; i<=16; i++) {
@@ -59,7 +51,7 @@
 
 ## 基本实验
  - [labs of minidecaf compilers](https://decaf-lang.github.io/minidecaf-tutorial/) : 实验覆盖词法分析，语法分析，语义分析，后端代码生成等编译器的完整执行过程。
- 
+
 ## ReadingList 编译原理课扩展实验
 希望看看编译技术如何用在科研方面或工程项目方面的同学可看看[相关论文和对应的project](https://github.com/chyyuu/compiler_course_info/blob/master/readinglist.md)
 

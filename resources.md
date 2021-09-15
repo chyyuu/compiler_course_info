@@ -139,6 +139,10 @@
 
 # Tutorials
 
+  * [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler)
+
+​        - [the-super-tiny-compiler-CN](https://github.com/YongzeYao/the-super-tiny-compiler-CN)
+
   * [A Tutorial Implementation of a Dependently Typed Lambda Calculus](https://www.andres-loeh.de/LambdaPi/).
   * [A Beginner's Guide to Linkers](http://www.lurklurk.org/linkers/linkers.html) - Tutorial for helping C & C++ programmers understand the essentials of what the linker does.
   * [Algorithm W Step By Step](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.65.7733&rep=rep1&type=pdf).
@@ -161,7 +165,7 @@
   * [Project: A Programming Language](http://eloquentjavascript.net/11_language.html) - Chapter 11 from the book _Eloquent JavaScript_, 2nd Edition.
   * [Write You a Haskell](http://dev.stephendiehl.com/fun/).
   * [Writing a Language in Truffel](http://cesquivias.github.io/tags/truffle.html) - Interpreter development tutorial using Truffel, by Cristian Esquivias.
-  
+
 # Compiler Related Tools
 
 ## Powerful Languages & Compilers
@@ -175,6 +179,7 @@
 
 ## LEX/YACC
 - [Python Lex-Yacc](http://www.dabeaz.com/ply/)
+- [SLY--next python lex-yacc](https://github.com/dabeaz/sly)
 - [ANTLR (ANother Tool for Language Recognition)--a powerful parser generator](http://www.antlr.org/)
 - [JFlex is a lexical analyzer generator written in Java](http://jflex.de/)
 - [byaccj is a parser generator written in Java](byaccj.sourceforge.net)
@@ -219,8 +224,10 @@
   * [Regular Expression to NFA (Non-Deterministic Finite Automata)](http://hackingoff.com/compilers/regular-expression-to-nfa-dfa)
   * [Convert NFA to DFA Online](http://hackingoff.com/compilers/nfa-to-dfa-conversion)
   * [Scanner Generator. Regular Expressions to NFA, DFA, and Lexical Analyzer](http://hackingoff.com/compilers/scanner-generator)
-  
+
 ## context free grammar
+  * [lex yacc in javascript](https://github.com/zaach/jison)
+  * [lex yacc in rust](https://github.com/lalrpop/lalrpop)
   * [context free grammar checker](http://mdaines.github.io/grammophone/)
   * [Generate Predict, First, and Follow Sets from EBNF (Extended Backus Naur Form) Grammar](http://hackingoff.com/compilers/predict-first-follow-set)
   * [LL(1) Parser Generator. First, Follow, & Predict Sets. Table](http://hackingoff.com/compilers/ll-1-parser-generator)
@@ -237,7 +244,7 @@
   * [docs for rust](https://docs.rs/)
   * [rust crates](https://crates.io/)
   * [rust main docs](https://www.rust-lang.org/zh-CN/documentation.html)
-  
+
 ## Reference
 - [aalhour's awesome-compilers](https://github.com/aalhour/awesome-compilers)
 
