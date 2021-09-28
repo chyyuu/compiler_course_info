@@ -51,6 +51,17 @@
 
 ## 基本实验
  - [labs of minidecaf compilers](https://decaf-lang.github.io/minidecaf-tutorial/) : 实验覆盖词法分析，语法分析，语义分析，后端代码生成等编译器的完整执行过程。
+ - [词法语法在线小实验](https://chyyuu.gitee.io/compiler-toolbox/)：在线实验包括：
+   - [Regex => NFA](https://chyyuu.gitee.io/compiler-toolbox/regex2nfa)
+   - [Regex => NFA => DFA](https://chyyuu.gitee.io/compiler-toolbox/nfa2dfa)
+   - [Regex => NFA => DFA => Min-DFA](https://chyyuu.gitee.io/compiler-toolbox/min_dfa)
+   - [Left factoring](https://chyyuu.gitee.io/compiler-toolbox/left_fact)
+   - [Left recursion](https://chyyuu.gitee.io/compiler-toolbox/left_rec)
+   - [First & Follow](https://chyyuu.gitee.io/compiler-toolbox/first_follow)
+   - [LL(1)](https://chyyuu.gitee.io/compiler-toolbox/ll1)
+   - [LR(0)/SLR(1)](https://chyyuu.gitee.io/compiler-toolbox/lr0)
+   - [LR(1)](https://chyyuu.gitee.io/compiler-toolbox/lr1)
+   - [LALR](https://chyyuu.gitee.io/compiler-toolbox/lalr)
 
 ## ReadingList 编译原理课扩展实验
 希望看看编译技术如何用在科研方面或工程项目方面的同学可看看[相关论文和对应的project](https://github.com/chyyuu/compiler_course_info/blob/master/readinglist.md)
