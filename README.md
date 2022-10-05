@@ -60,6 +60,7 @@
      - [Left recursion](https://chyyuu.gitee.io/compiler-toolbox/left_rec)
      - [First & Follow](https://chyyuu.gitee.io/compiler-toolbox/first_follow)
      - [LL(1)](https://chyyuu.gitee.io/compiler-toolbox/ll1)
+     - [LL(1) Parser Visualization](https://www.cs.princeton.edu/courses/archive/spring20/cos320/LL1/)
      - [LR(0)/SLR(1)](https://chyyuu.gitee.io/compiler-toolbox/lr0)
      - [LR(1)](https://chyyuu.gitee.io/compiler-toolbox/lr1)
      - [LALR](https://chyyuu.gitee.io/compiler-toolbox/lalr)
