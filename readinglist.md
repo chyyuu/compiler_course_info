@@ -28,7 +28,8 @@ From [codegeex blog](https://models.aminer.cn/codegeex/blog/index_zh.html#%E5%8F
 
 ### Ideas
 - [一些比较有趣的想法](./ai4sysprog.md)
-如果同学感兴趣且想探索一下，请联系陈渝老师、唐杰老师
+- 
+如果同学对这个方向感兴趣且想探索一下，请联系陈渝老师、唐杰老师
 
 # 编译原理课扩展实验
 **扩展实验目录**
