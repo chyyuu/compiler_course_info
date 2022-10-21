@@ -13,7 +13,7 @@
 
 如果同学对这个比较新的方向感兴趣且想探索一下，请联系陈渝老师、唐杰老师
 
-### Paper (Code Generation/program synthesis)
+### Paper (Code Generation/Program Synthesis with AI methods)
 From [codegeex blog](https://models.aminer.cn/codegeex/blog/index_zh.html#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE)
 
 - Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Ponde de Oliveira Pinto, Jared Kaplan, Harri Edwards, Yuri Burda, Nicholas Joseph, Greg Brockman, et al. Evaluating large language models trained on code. arXiv preprint arXiv:2107.03374, 2021.
