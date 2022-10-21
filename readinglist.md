@@ -2,7 +2,7 @@
 # 编译原理新研究方向
 
 ## AI4Prog/Compiler
-Code Generation/Program Synthesis with AI methods
+**Code Generation/Program Synthesis with AI methods**
 
 
 ### Projects
