@@ -1,6 +1,10 @@
 
-## 编译原理新研究方向
-- AI4Prog/Compiler
+# 编译原理新研究方向
+
+## AI4Prog/Compiler
+
+### Paper
+From [codegeex blog](https://models.aminer.cn/codegeex/blog/index_zh.html#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE)
 
 - Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Ponde de Oliveira Pinto, Jared Kaplan, Harri Edwards, Yuri Burda, Nicholas Joseph, Greg Brockman, et al. Evaluating large language models trained on code. arXiv preprint arXiv:2107.03374, 2021.
 - Yujia Li, David Choi, Junyoung Chung, Nate Kushman, Julian Schrittwieser, Rémi Leblond, Tom Eccles, James Keeling, Felix Gimeno, Agustin Dal Lago, et al. Competition-level code generation with alphacode. arXiv preprint arXiv:2203.07814, 2022. 
@@ -20,7 +24,7 @@
 - Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Ed Chi, Quoc Le, and Denny Zhou. Chain of thought prompting elicits reasoning in large language models. arXiv preprint arXiv:2201.11903, 2022. 
 
 
-## 编译原理课扩展实验
+# 编译原理课扩展实验
 **扩展实验目录**
 
 * [选题零 编译器for新语言or新硬件支持](#选题零-编译器for新语言or新硬件支持)
