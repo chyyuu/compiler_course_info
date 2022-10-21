@@ -3,6 +3,16 @@
 
 ## AI4Prog/Compiler
 
+
+
+### Projects
+- [codegeex](https://models.aminer.cn/codegeex/)
+
+### Ideas
+- [一些比较有趣的想法](./ai4sysprog.md)
+
+如果同学对这个比较新的方向感兴趣且想探索一下，请联系陈渝老师、唐杰老师
+
 ### Paper (Code Generation/program synthesis)
 From [codegeex blog](https://models.aminer.cn/codegeex/blog/index_zh.html#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE)
 
@@ -23,13 +33,6 @@ From [codegeex blog](https://models.aminer.cn/codegeex/blog/index_zh.html#%E5%8F
 - Samyam Rajbhandari, Jeff Rasley, Olatunji Ruwase, and Yuxiong He. ZeRO: Memory optimizations toward training trillion parameter models. In SC20: International Conference for High Performance Computing, Networking, Storage and Analysis, pp. 1–16. IEEE, 2020. 
 - Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Ed Chi, Quoc Le, and Denny Zhou. Chain of thought prompting elicits reasoning in large language models. arXiv preprint arXiv:2201.11903, 2022. 
 
-### Projects
-- [codegeex](https://models.aminer.cn/codegeex/)
-
-### Ideas
-- [一些比较有趣的想法](./ai4sysprog.md)
-
-如果同学对这个比较新的方向感兴趣且想探索一下，请联系陈渝老师、唐杰老师
 
 # 编译原理课扩展实验
 **扩展实验目录**
