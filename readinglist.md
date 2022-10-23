@@ -1,8 +1,10 @@
 
 # 编译原理新研究方向
 
-## AI4Prog/Compiler
+## AI4Prog/Compiler/OS
 **Code Generation/Program Synthesis with AI methods**
+
+我们让AI/大数据帮助我们学习Rust编程，写OS代码，总结写OS的思路...
 
 ### Ideas
 - [一些比较有趣的想法](./ai4sysprog.md)
