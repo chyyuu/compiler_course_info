@@ -1,8 +1,12 @@
 
 # 编译原理新研究方向
 
+**AI4SYS**
+
 ## AI4Prog/Compiler/OS
 **Code Generation/Program Synthesis with AI methods**
+
+跨领域研究让我看到了新的方向。
 
 我们让AI/大数据帮助我们学习Rust编程，改进编译器，写OS代码，总结写OS的思路，抽象OS规范...
 
