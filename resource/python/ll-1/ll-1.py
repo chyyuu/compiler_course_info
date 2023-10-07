@@ -348,8 +348,8 @@ def createParseTable():
 		rhs = diction[lhs]
 		for y in rhs:
 			res = first(y)
-			# epsilon is present,
-			# - take union with follow
+			# if epsilon is not present, then res is just the first set of y
+			# if epsilon is present, then take union with follow
 			if '#' in res:
 				if type(res) == str:
 					firstFollow = []
@@ -380,7 +380,7 @@ def createParseTable():
 					if f"{lhs}->{y}" in mat[xnt][yt]:
 						continue
 					else:
-						grammar_is_LL = False
+						grammar_is_LL = False # not LL(1)
 						mat[xnt][yt] = mat[xnt][yt] \
 									+ f",{lhs}->{' '.join(y)}"
 
@@ -446,6 +446,7 @@ def validateStringUsingStackBuffer(parsing_table, grammarll1,
 				lhs_rhs = entry.split("->")
 				lhs_rhs[1] = lhs_rhs[1].replace('#', '').strip()
 				entryrhs = lhs_rhs[1].split()
+				# derivation rule: pop stack top, then push entryrhs
 				stack = entryrhs + stack[1:]
 			else:
 				return f"\nInvalid String! No rule at " \
@@ -457,6 +458,7 @@ def validateStringUsingStackBuffer(parsing_table, grammarll1,
 					.format(' '.join(buffer),
 							' '.join(stack),
 							f"Matched:{stack[0]}"))
+				# match rule: del terminal in stack&buffer by pop stack top, pop buffer top
 				buffer = buffer[:-1]
 				stack = stack[1:]
 			else:
