@@ -1,0 +1,7 @@
+bump2version
+wheel
+watchdog
+flake8
+coverage
+twine
+graphviz
